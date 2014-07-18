@@ -21,7 +21,8 @@
 				<img src="<?php echo base_url(); ?>img/Logo_TOC.png" alt="Logo TOC"></a>										
 			</div>
 			<div class="span10">
-				<h2>Technology Outsourcing Center</h2>				
+				<h2>Technology Outsourcing Center</h2>	
+				<h6>Ecosistema de Innovación</h6>			
 			</div>			
 			<div class="span1">
 				<small>Apoyado</small>	
