@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/plataforma_agentes_toc/';
+$config['base_url']	= 'http://localhost/plataforma-agentes-toc/';
 
 /*
 |--------------------------------------------------------------------------
