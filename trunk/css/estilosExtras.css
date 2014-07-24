@@ -125,13 +125,18 @@
     /* Center align the text within the three columns below the carousel */
     .marketing .span4 {
       text-align: center;
+      border: 1px solid #ddd; 
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      margin: 12px;
     }
     .marketing h2 {
       font-weight: normal;
     }
     .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
     }  
 
 
