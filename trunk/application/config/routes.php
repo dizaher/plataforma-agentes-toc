@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "toc_controller";
+$route['default_controller'] = "ctoc";
 $route['404_override'] = '';
 
 

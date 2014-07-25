@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Toc_controller extends CI_Controller {
+class Ctoc extends CI_Controller {
 
 	function __construct()
 	  {
