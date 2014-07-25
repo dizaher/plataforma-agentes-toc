@@ -131,7 +131,7 @@
       border-radius: 5px;
       margin: 12px;
     }
-    .marketing h2 {
+    .marketing h3 {
       font-weight: normal;
     }
     .marketing .span4 p {
@@ -200,4 +200,8 @@
         margin-top: 40px;
       }     
 
+    }
+    .center{
+      text-align: center;
+      font-size: 8;
     }

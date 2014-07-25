@@ -25,8 +25,8 @@
           <h2>Technology Outsourcing Center</h2>  
           <h6>Ecosistema de Innovación</h6>     
         </div>      
-        <div class="span1">
-          <small>Apoyado</small>  
+        <div class="span1" align="center">
+          <small class="center">Apoyado</small>          
           <a href="http://www.conacyt.mx/" target="_blank"><img src="http://fca.uaq.mx/img/logo-conacyt.png" alt="Conacyt"></a>
         </div>
         
@@ -56,9 +56,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url(); ?>img/simbolo_toc_blanco.png" alt="toc" width="14" heigth="14" ></a>               
                     <ul class="dropdown-menu">
                       <li><a href="<?php echo site_url('toc_controller/quienes') ?>">Quiénes Somos</a></li>
-                                <li><a href="<?php echo site_url('toc_controller/servicios') ?>">Servicios</a></li>
-                                <li><a href="<?php echo site_url('toc_controller/difusion') ?>">Difusión</a></li>
-                                <li><a href="<?php echo site_url('toc_controller/operaytec') ?>">Operaciones Y tecnologías</a></li>
+                                <li><a href="<?php echo site_url('toc_controller/servicios') ?>">Productos y Servicios</a></li>
+                                <li><a href="<?php echo site_url('toc_controller/difusion') ?>">Noticias y Difusión</a></li>
+                                <li><a href="<?php echo site_url('toc_controller/operaytec') ?>">Operaciones y Tecnologías</a></li>
                                 <li><a href="<?php echo site_url('toc_controller/contacto') ?>">Contacto</a></li>                 
                     </ul>
                   </li>
@@ -70,7 +70,7 @@
                                 <li><a href="<?php echo site_url('toc_controller/centros') ?>">Centros de Investigación</a></li>
                                 <li><a href="<?php echo site_url('toc_controller/nivelesgobierno') ?>">Niveles de Gobierno</a></li>
                                 <li><a href="<?php echo site_url('toc_controller/poderesgobierno') ?>">Poderes de Gobierno</a></li>
-                                <li><a href="<?php echo site_url('toc_controller/finan') ?>">FIA</a></li>
+                                <li><a href="<?php echo site_url('toc_controller/finan') ?>">Financieras, Incubadoras y Aceleradoras</a></li>
                                 <li><a href="<?php echo site_url('toc_controller/orgciviles') ?>">Organizaciones Civiles</a></li>
                                 <li><a href="<?php echo site_url('toc_controller/sociedad') ?>">Sociedad en General</a></li>                  
                     </ul>
@@ -90,7 +90,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Información<b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">I+D+i<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo site_url('toc_controller/estudios') ?>">Estudios</a></li>
                                 <li><a href="<?php echo site_url('toc_controller/programas') ?>">Programas</a></li>
@@ -131,6 +131,17 @@
                                 <li><a href="<?php echo site_url('toc_controller/financiamiento') ?>">Financiamiento</a></li>
                                 <li><a href="<?php echo site_url('toc_controller/capital') ?>">Capital Humano</a></li>
                                 <li><a href="<?php echo site_url('toc_controller/regularizacion') ?>">Legislación y Normatividad</a></li>                                                  
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mesa de Negocios<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<?php echo site_url('toc_controller/nichos') ?>">Espacio para Agentes</a></li>
+                                <li><a href="<?php echo site_url('toc_controller/promocion') ?>">Espacios Publicitarios</a></li>
+                                <li><a href="<?php echo site_url('toc_controller/financiamiento') ?>">Concreción o cierre de actividad</a></li>
+                                <li><a href="<?php echo site_url('toc_controller/capital') ?>">Gestión Financiera a Proyecto</a></li>
+                                <li><a href="<?php echo site_url('toc_controller/regularizacion') ?>">Promoción de proyectos</a></li>                                                  
+                                <li><a href="<?php echo site_url('toc_controller/regularizacion') ?>">Información especializada</a></li> 
                             </ul>
                         </li>
               </ul>
