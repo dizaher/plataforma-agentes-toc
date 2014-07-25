@@ -50,19 +50,19 @@
       <div class="row">
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Sistema de monitoreo de productos</h2>
+          <h3>Sistema de monitoreo de productos</h3>
           <p>La empresa TOC en colaboración con un alumno de maestría de ingeniería de software desarrollaron un sistema capaz de monitorear y mostrar reportes de los valores sensados por los productos piloto.</p>
           <p><a class="btn" href="#">Ver detalles &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Sistema acuaponico chinampero</h2>
+          <h3>Sistema acuaponico chinampero</h3>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn" href="#">Ver detalles &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Sistema de administración de agua residencial</h2>
+          <h3>Sistema de administración de agua residencial</h3>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn" href="#">Ver detalles &raquo;</a></p>
         </div><!-- /.span4 -->
