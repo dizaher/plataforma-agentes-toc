@@ -49,63 +49,59 @@
     <div class="row">
       <div class="span4">
         <hr>
-            <div class="navbar">
-              <div class="navbar-inner">                
-                <ul class="nav">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url(); ?>img/simbolo_toc.png" alt="toc" width="14" heigth="14" ></a>               
-                  <ul class="dropdown-menu">
-                    <li><a href="<?php echo site_url('ctoc/quienes') ?>">Quiénes Somos</a></li>
-                    <li><a href="<?php echo site_url('ctoc/servicios') ?>">Productos y Servicios</a></li>
-                    <li><a href="<?php echo site_url('ctoc/difusion') ?>">Noticias y Difusión</a></li>
-                    <li><a href="<?php echo site_url('ctoc/operaytec') ?>">Operaciones y Tecnologías</a></li>
-                    <li><a href="<?php echo site_url('ctoc/contacto') ?>">Contacto</a></li>                 
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Agentes de Innovación<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="<?php echo site_url('ctoc/empresas') ?>">Empresas</a></li>                     
-                    <li><a href="<?php echo site_url('ctoc/ies') ?>">IES</a></li>
-                    <li><a href="<?php echo site_url('ctoc/centros') ?>">Centros de Investigación</a></li>
-                    <li><a href="<?php echo site_url('ctoc/nivelesgobierno') ?>">Niveles de Gobierno</a></li>
-                    <li><a href="<?php echo site_url('ctoc/poderesgobierno') ?>">Poderes de Gobierno</a></li>
-                    <li><a href="<?php echo site_url('ctoc/finan') ?>">Financieras, Incubadoras y Aceleradoras</a></li>
-                    <li><a href="<?php echo site_url('ctoc/orgciviles') ?>">Organizaciones Civiles</a></li>
-                    <li><a href="<?php echo site_url('ctoc/sociedad') ?>">Sociedad en General</a></li>                  
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Areas<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="<?php echo site_url('ctoc/agua') ?>">Agua</a></li>
-                      <li><a href="<?php echo site_url('ctoc/energia') ?>">Energía</a></li>
-                      <li><a href="<?php echo site_url('ctoc/alimentacion') ?>">Alimentación</a></li>
-                      <li><a href="<?php echo site_url('ctoc/transporte') ?>">Transporte</a></li>
-                      <li><a href="<?php echo site_url('ctoc/vivienda') ?>">Vivienda</a></li>
-                      <li><a href="<?php echo site_url('ctoc/seguridad') ?>">Seguridad</a></li>
-                      <li><a href="<?php echo site_url('ctoc/residuos') ?>">Residuos Sólidos Urbanos</a></li>
-                      <li><a href="<?php echo site_url('ctoc/salud') ?>">Salud</a></li>
-                      <li><a href="<?php echo site_url('ctoc/educacion') ?>">Educación</a></li>                         
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">I+D+i<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="<?php echo site_url('ctoc/estudios') ?>">Estudios</a></li>
-                      <li><a href="<?php echo site_url('ctoc/programas') ?>">Programas</a></li>
-                      <li><a href="<?php echo site_url('ctoc/cadenas') ?>">Cadenas y Sectores</a></li>
-                      <li><a href="<?php echo site_url('ctoc/prodserv') ?>">Productos y Servicios</a></li>
-                      <li><a href="<?php echo site_url('ctoc/apoyos') ?>">Apoyos</a></li>
-                      <li><a href="<?php echo site_url('ctoc/progcap') ?>">Programas de Capacitación</a></li>
-                      <li><a href="<?php echo site_url('ctoc/politicas') ?>">Políticas y Marco Jurídico</a></li>
-                      <li><a href="<?php echo site_url('ctoc/herramientas') ?>">Tecnológicas de Articulación</a></li>
-                      <li><a href="<?php echo site_url('ctoc/clientesec') ?>">Clientes y Sectores</a></li>                          
-                  </ul>
-                </li>
-                </ul>
-              </div>
-            </div>      
+          <ul class="nav nav-pills">
+            <li class="dropdown ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url(); ?>img/iconTOC.png" alt="toc" width="14" heigth="14" ></a>               
+              <ul class="dropdown-menu" >
+                <li><a href="<?php echo site_url('ctoc/quienes') ?>">Quiénes Somos</a></li>
+                <li><a href="<?php echo site_url('ctoc/servicios') ?>">Productos y Servicios</a></li>
+                <li><a href="<?php echo site_url('ctoc/difusion') ?>">Noticias y Difusión</a></li>
+                <li><a href="<?php echo site_url('ctoc/operaytec') ?>">Operaciones y Tecnologías</a></li>
+                <li><a href="<?php echo site_url('ctoc/contacto') ?>">Contacto</a></li>                 
+              </ul>
+            </li>
+            <li class="dropdown ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Agentes de Innovación<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo site_url('ctoc/empresas') ?>">Empresas</a></li>                     
+                <li><a href="<?php echo site_url('ctoc/ies') ?>">IES</a></li>
+                <li><a href="<?php echo site_url('ctoc/centros') ?>">Centros de Investigación</a></li>
+                <li><a href="<?php echo site_url('ctoc/nivelesgobierno') ?>">Niveles de Gobierno</a></li>
+                <li><a href="<?php echo site_url('ctoc/poderesgobierno') ?>">Poderes de Gobierno</a></li>
+                <li><a href="<?php echo site_url('ctoc/finan') ?>">Financieras, Incubadoras y Aceleradoras</a></li>
+                <li><a href="<?php echo site_url('ctoc/orgciviles') ?>">Organizaciones Civiles</a></li>
+                <li><a href="<?php echo site_url('ctoc/sociedad') ?>">Sociedad en General</a></li>                  
+              </ul>
+            </li>
+            <li class="dropdown ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Areas<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="<?php echo site_url('ctoc/agua') ?>">Agua</a></li>
+                  <li><a href="<?php echo site_url('ctoc/energia') ?>">Energía</a></li>
+                  <li><a href="<?php echo site_url('ctoc/alimentacion') ?>">Alimentación</a></li>
+                  <li><a href="<?php echo site_url('ctoc/transporte') ?>">Transporte</a></li>
+                  <li><a href="<?php echo site_url('ctoc/vivienda') ?>">Vivienda</a></li>
+                  <li><a href="<?php echo site_url('ctoc/seguridad') ?>">Seguridad</a></li>
+                  <li><a href="<?php echo site_url('ctoc/residuos') ?>">Residuos Sólidos Urbanos</a></li>
+                  <li><a href="<?php echo site_url('ctoc/salud') ?>">Salud</a></li>
+                  <li><a href="<?php echo site_url('ctoc/educacion') ?>">Educación</a></li>                         
+              </ul>
+            </li>
+            <li class="dropdown ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">I+D+i<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="<?php echo site_url('ctoc/estudios') ?>">Estudios</a></li>
+                  <li><a href="<?php echo site_url('ctoc/programas') ?>">Programas</a></li>
+                  <li><a href="<?php echo site_url('ctoc/cadenas') ?>">Cadenas y Sectores</a></li>
+                  <li><a href="<?php echo site_url('ctoc/prodserv') ?>">Productos y Servicios</a></li>
+                  <li><a href="<?php echo site_url('ctoc/apoyos') ?>">Apoyos</a></li>
+                  <li><a href="<?php echo site_url('ctoc/progcap') ?>">Programas de Capacitación</a></li>
+                  <li><a href="<?php echo site_url('ctoc/politicas') ?>">Políticas y Marco Jurídico</a></li>
+                  <li><a href="<?php echo site_url('ctoc/herramientas') ?>">Tecnológicas de Articulación</a></li>
+                  <li><a href="<?php echo site_url('ctoc/clientesec') ?>">Clientes y Sectores</a></li>                          
+              </ul>
+            </li>
+          </ul>      
       </div>
       <div class="span4">        
         <h2 class="text-center">Technology Outsourcing Center</h2>  
@@ -113,53 +109,49 @@
       </div>
       <div class="span4">
         <hr>
-          <div class="navbar">
-            <div class="navbar-inner">              
-              <ul class="nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pilares<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="<?php echo site_url('ctoc/mercado') ?>">Mercado</a></li>
-                      <li><a href="<?php echo site_url('ctoc/marco') ?>">Marco Regulatorio</a></li>
-                      <li><a href="<?php echo site_url('ctoc/capihumano') ?>">Capital Humano</a></li>
-                      <li><a href="<?php echo site_url('ctoc/finanincu') ?>">FIA</a></li>
-                      <li><a href="<?php echo site_url('ctoc/forta') ?>">Innovación Empresarial</a></li>
-                      <li><a href="<?php echo site_url('ctoc/genconocimiento') ?>">Conocimiento estratégico</a></li>                                                 
-                  </ul>
-              </li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Premisas<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="<?php echo site_url('ctoc/innovacion') ?>">Estrategia de Innovación</a></li>
-                      <li><a href="<?php echo site_url('ctoc/areasimpacto') ?>">Áreas de Impacto</a></li>
-                      <li><a href="<?php echo site_url('ctoc/mecanismo') ?>">Coordinación entre Agentes</a></li>
-                      <li><a href="<?php echo site_url('ctoc/cuentas') ?>">Rendición de Cuentas</a></li>                                                     
-                  </ul>
-              </li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Necesidades a Satisfacer<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="<?php echo site_url('ctoc/nichos') ?>">Nichos de Mercado</a></li>
-                      <li><a href="<?php echo site_url('ctoc/promocion') ?>">Apoyo I+D+i</a></li>
-                      <li><a href="<?php echo site_url('ctoc/financiamiento') ?>">Financiamiento</a></li>
-                      <li><a href="<?php echo site_url('ctoc/capital') ?>">Capital Humano</a></li>
-                      <li><a href="<?php echo site_url('ctoc/regularizacion') ?>">Legislación y Normatividad</a></li>                                                  
-                  </ul>
-              </li>
-              <!--<li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mesa de Negocios<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="<?php echo site_url('ctoc/nichos') ?>">Espacio para Agentes</a></li>
-                      <li><a href="<?php echo site_url('ctoc/promocion') ?>">Espacios Publicitarios</a></li>
-                      <li><a href="<?php echo site_url('ctoc/financiamiento') ?>">Concreción o cierre de actividad</a></li>
-                      <li><a href="<?php echo site_url('ctoc/capital') ?>">Gestión Financiera a Proyecto</a></li>
-                      <li><a href="<?php echo site_url('ctoc/regularizacion') ?>">Promoción de proyectos</a></li>                                                  
-                      <li><a href="<?php echo site_url('ctoc/regularizacion') ?>">Información especializada</a></li> 
-                  </ul>
-              </li>-->
-              </ul>
-            </div>
-          </div>
+         <ul class="nav nav-pills">
+            <li class="dropdown ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pilares<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo site_url('ctoc/mercado') ?>">Mercado</a></li>
+                    <li><a href="<?php echo site_url('ctoc/marco') ?>">Marco Regulatorio</a></li>
+                    <li><a href="<?php echo site_url('ctoc/capihumano') ?>">Capital Humano</a></li>
+                    <li><a href="<?php echo site_url('ctoc/finanincu') ?>">FIA</a></li>
+                    <li><a href="<?php echo site_url('ctoc/forta') ?>">Innovación Empresarial</a></li>
+                    <li><a href="<?php echo site_url('ctoc/genconocimiento') ?>">Conocimiento estratégico</a></li>                                                 
+                </ul>
+            </li>
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Premisas<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo site_url('ctoc/innovacion') ?>">Estrategia de Innovación</a></li>
+                    <li><a href="<?php echo site_url('ctoc/areasimpacto') ?>">Áreas de Impacto</a></li>
+                    <li><a href="<?php echo site_url('ctoc/mecanismo') ?>">Coordinación entre Agentes</a></li>
+                    <li><a href="<?php echo site_url('ctoc/cuentas') ?>">Rendición de Cuentas</a></li>                                                     
+                </ul>
+            </li>
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Necesidades a Satisfacer<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo site_url('ctoc/nichos') ?>">Nichos de Mercado</a></li>
+                    <li><a href="<?php echo site_url('ctoc/promocion') ?>">Apoyo I+D+i</a></li>
+                    <li><a href="<?php echo site_url('ctoc/financiamiento') ?>">Financiamiento</a></li>
+                    <li><a href="<?php echo site_url('ctoc/capital') ?>">Capital Humano</a></li>
+                    <li><a href="<?php echo site_url('ctoc/regularizacion') ?>">Legislación y Normatividad</a></li>                                                  
+                </ul>
+            </li>
+            <!--<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mesa de Negocios<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo site_url('ctoc/nichos') ?>">Espacio para Agentes</a></li>
+                    <li><a href="<?php echo site_url('ctoc/promocion') ?>">Espacios Publicitarios</a></li>
+                    <li><a href="<?php echo site_url('ctoc/financiamiento') ?>">Concreción o cierre de actividad</a></li>
+                    <li><a href="<?php echo site_url('ctoc/capital') ?>">Gestión Financiera a Proyecto</a></li>
+                    <li><a href="<?php echo site_url('ctoc/regularizacion') ?>">Promoción de proyectos</a></li>                                                  
+                    <li><a href="<?php echo site_url('ctoc/regularizacion') ?>">Información especializada</a></li> 
+                </ul>
+            </li>-->         
+          </ul> 
       </div>
     </div>
   </div>
@@ -167,14 +159,11 @@
     <?php $this->load->view($contenido) ?>
   </div>
   <!-- FOOTER -->
-  <footer class="piePagina">
-    <img src="<?php echo base_url(); ?>img/CIE.jpg" alt="Mano" width="50px" heigth="50px"><hr>
-    <img src="<?php echo base_url(); ?>img/REINTECH.jpg" alt="Mano" width="70px" heigth="70px">
-    <img src="<?php echo base_url(); ?>img/ESTECS.jpg" alt="Mano" width="70px" heigth="70px">
-    <img src="<?php echo base_url(); ?>img/AMANECER.jpg" alt="Mano" width="50px" heigth="50px">
-    <img src="<?php echo base_url(); ?>img/MASAYUDA.jpg" alt="Mano" width="50px" heigth="50px">
-    <img src="<?php echo base_url(); ?>img/logoTOC.png" alt="Mano" width="50px" heigth="80px">
-    <img src="<?php echo base_url(); ?>img/GREENIT.jpg" alt="Mano" width="50px" heigth="50px"><br>
+  <footer class="piePagina">    
+    <hr>
+    <img src="<?php echo base_url(); ?>img/logos2.png" alt="CIE" width="500px" height="10px">
+    <img src="<?php echo base_url(); ?>img/CIE.jpg" alt="cie" width="70px" height="50px">
+    <br>
     &copy; Copyright 2013 Todos los derechos Reservados. 
         <address>
         <strong>TOC Technology Outsourcing Center</strong><br>
