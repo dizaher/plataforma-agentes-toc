@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Plataforma Tecnologica</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content=" Sitio de Technology Outsourcing Center TOC ">
     <meta name="author" content="">
 
     <!-- Le styles -->
@@ -45,7 +45,7 @@
           <hr>
       </div>
       <div class="span4" align="center"><a href="<?php echo site_url('ctoc') ?>">
-          <img src="<?php echo base_url(); ?>img/Logo_TOC.png" alt="Logo TOC"></a></div>
+          <img src="<?php echo base_url(); ?>img/Logo_TOC.png" alt="TOC"></a></div>
       <div class="span4" align="right">              
         <a href="http://www.conacyt.mx/" target="_blank"><img src="<?php echo base_url(); ?>img/logo-conacyt.png" alt="Conacyt"></a>              
         <hr>
