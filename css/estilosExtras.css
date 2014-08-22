@@ -136,13 +136,14 @@
       -moz-border-radius: 5px;
       border-radius: 5px;
       margin: 12px;
-      background-color: #06385c;
+      background-color: #06385c;      
     }
     .marketing h3 {
       text-align: center;
       margin-left: 10px;
       margin-right: 10px;
       font-weight: normal;
+      line-height: 22px;
       color: #fff;
     }
     .marketing .span4 p {

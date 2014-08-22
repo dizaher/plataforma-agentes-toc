@@ -93,21 +93,17 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
+        <div class="span4">          
           <h3>Sistema de monitoreo de productos</h3>
-          <p>La empresa TOC en colaboración con un alumno de maestría de ingeniería de software desarrollaron un sistema capaz de monitorear y mostrar reportes de los valores sensados por los productos piloto.</p>
-          <p>El monitoreo se basa en verificar el estado de los productos piloto que se tienen instalados en el hogar, con el fin de observar su funcionamiento.</p>
+          <p>La empresa TOC en colaboración con un alumno de maestría de ingeniería de software desarrollan un sistema de monitoreo de los valores sensados por los productos piloto. El monitoreo se basa en verificar el estado de los productos piloto que se tienen instalados en el hogar, con el fin de observar su funcionamiento, además se cuentan con técnicas de minería de datos para la recolección.</p>
           <p><a class="btn" href="#">Ver detalles &raquo;</a></p>
         </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
+        <div class="span4">        
           <h3>Sistema acuaponico chinampero</h3>
           <p>Descubre como la empresa TOC, TECHNOLOGY OUTSOURCING CENTER SA DE CV, ha desarrollado un sistema para dar una solución al tema de alimentos frescos y de calidad al alcance de uno, con un sistema que combina dos técnicas agropecuarias más la inclusión de un método ancestral de los Aztecas, para, la obtención de vegetales y peces, de la cosecha a tú mesa.</p>
           <p><a class="btn" href="#">Ver detalles &raquo;</a></p>
         </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
+        <div class="span4">          
           <h3>Motor Stirling  versión 2.0</h3>
           <p>La empresa TOC construye un motor para bombear y generar electricidad, es un motor Stirling tipo gamma o motor de combustión externa. Este motor genera un trabajo mecánico gracias a la variación de presión provocada por una diferencia de temperaturas. Los motores Stirling funcionan a volumen constante, el gas que se puede ocupar es helio, hidrogeno, nitrógeno, metano y aire, este último es el gas de trabajo que se ocupa en este motor prototipo. </p>
           <p><a class="btn" href="#">Ver detalles &raquo;</a></p>

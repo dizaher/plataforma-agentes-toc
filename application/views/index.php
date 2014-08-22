@@ -37,21 +37,27 @@
           }, true);
           </script>
           <link href="<?php echo base_url(); ?>css/search.css" rel="stylesheet" type="text/css" />
+          <!--<form class="form-inline">
+        <input type="text" class="input-small" placeholder="Email">
+        <input type="password" class="input-small" placeholder="Password">              
+        <button type="submit" class="btn">Sign in</button>
+        </form>-->
+          <hr>
       </div>
       <div class="span4" align="center"><a href="<?php echo site_url('ctoc') ?>">
           <img src="<?php echo base_url(); ?>img/Logo_TOC.png" alt="Logo TOC"></a></div>
-      <div class="span4" align="right">      
-          <a href="http://www.conacyt.mx/" target="_blank"><img src="<?php echo base_url(); ?>img/logo-conacyt.png" alt="Conacyt"></a>
+      <div class="span4" align="right">              
+        <a href="http://www.conacyt.mx/" target="_blank"><img src="<?php echo base_url(); ?>img/logo-conacyt.png" alt="Conacyt"></a>              
+        <hr>
       </div>            
     </div>
   </div>    
   <div class="container">
     <div class="row">
-      <div class="span4">
-        <hr>
+      <div class="span4">        
           <ul class="nav nav-pills">
             <li class="dropdown ">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url(); ?>img/iconTOC.png" alt="toc" width="14" heigth="14" ></a>               
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url(); ?>img/iconTOC.png" alt="toc" width="13" heigth="13" ></a>               
               <ul class="dropdown-menu" >
                 <li><a href="<?php echo site_url('ctoc/quienes') ?>">Quiénes Somos</a></li>
                 <li><a href="<?php echo site_url('ctoc/servicios') ?>">Productos y Servicios</a></li>
@@ -107,8 +113,7 @@
         <h2 class="text-center">Technology Outsourcing Center</h2>  
         <h6 class="text-center">Ecosistema de Innovación</h6>
       </div>
-      <div class="span4">
-        <hr>
+      <div class="span4">      
          <ul class="nav nav-pills">
             <li class="dropdown ">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pilares<b class="caret"></b></a>
@@ -161,8 +166,7 @@
   <!-- FOOTER -->
   <footer class="piePagina">    
     <hr>
-    <img src="<?php echo base_url(); ?>img/logos2.png" alt="CIE" width="500px" height="10px">
-    <img src="<?php echo base_url(); ?>img/CIE.jpg" alt="cie" width="70px" height="50px">
+    <img src="<?php echo base_url(); ?>img/logos2.png" alt="CIE" width="500px" height="10px">    
     <br>
     &copy; Copyright 2013 Todos los derechos Reservados. 
         <address>
