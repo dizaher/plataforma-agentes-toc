@@ -135,7 +135,7 @@
                     <li><a href="<?php echo site_url('ctoc/cuentas') ?>">Rendición de Cuentas</a></li>                                                     
                 </ul>
             </li>
-            <li class="dropdown ">
+            <!--<li class="dropdown ">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Necesidades a Satisfacer<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="<?php echo site_url('ctoc/nichos') ?>">Nichos de Mercado</a></li>
@@ -145,7 +145,7 @@
                     <li><a href="<?php echo site_url('ctoc/regularizacion') ?>">Legislación y Normatividad</a></li>                                                  
                 </ul>
             </li>
-            <!--<li class="dropdown">
+            <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mesa de Negocios<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="<?php echo site_url('ctoc/nichos') ?>">Espacio para Agentes</a></li>
