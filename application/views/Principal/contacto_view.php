@@ -1,5 +1,5 @@
 			           			            			           			            			          
-<div class="container">	
+<div class="grid fluid">	
 	<div class="row">
 		<div class="span12">
 			<ul class="breadcrumb">
@@ -22,9 +22,9 @@
 			    </address>
 			    <hr>
 			    <address>
-			    	<p><strong>Angela Beatríz Chávez Reyes</strong></p>					    
+			    	<p><strong>Ing. Angela Beatríz Chávez Reyes</strong></p>					    
 				    <p>Vinculación</p>
-				    <p><a href="mailto:#">achavez@tocveracruz.com.mx</a></p>					    
+				    <p><a href="mailto:#">achavez@tocveracruz.com.mx</a> | <a href="mailto:#">cara0818@gmail.com</a></p>					    
 				    <p>Calle México No. 34, Colonia Pumar, CP 91040</p>
 				    <p>Xalapa, Veracruz, México.</p>					    					    
 				    <abbr title="Phone">Teléfono:</abbr> (228) 8419919

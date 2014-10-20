@@ -42,8 +42,8 @@
             </div>
           </div>
 
-          <a class="controls left"><i class="icon-arrow-left-3"></i></a>
-          <a class="controls right"><i class="icon-arrow-right-3"></i></a>
+          <a class="controls left fg-gray"><i class="icon-arrow-left-3"></i></a>
+          <a class="controls right fg-gray"><i class="icon-arrow-right-3"></i></a>
       </div>
       <script>
           $(function(){

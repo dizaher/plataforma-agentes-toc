@@ -20,7 +20,12 @@ class Ctoc extends CI_Controller {
 	  $data['contenido']='cie_view';
 	  $this->load->view('index',$data); 
 	 }
-	 /////////////////////////////////////////////////////////////////////////////////////
+	 /////////////////////////////////////////////////////////////////////
+	 public function interes()
+	 {
+	  $data['contenido']='sitios_view';
+	  $this->load->view('index',$data); 
+	 }/////////////////////////////////////////////////////////////////////////////////////
 	 public function quienes()
 	 {
 	  $data['contenido']='Principal/quienesomos_view';//Nombre de carpeta y nombre de la vista
