@@ -1,5 +1,5 @@
 	           			            			           			            			          
-	<div class="container">	
+	<div class="grid fluid">	
 	<div class="row">
 			<div class="span12">
 				<ul class="breadcrumb">

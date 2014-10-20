@@ -1,5 +1,5 @@
 		           			            			           			            			          
-	<div class="container">	
+	<div class="grid fluid">	
 	<div class="row">
 			<div class="span12">
 				<ul class="breadcrumb">
@@ -13,14 +13,15 @@
 		<div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Contenidos</li>
-              <li><a href="#e1">Sistema de Información Energética (SIE)</a></li>
-              <li><a href="#e2">Energías renovables</a></li>
-              <li><a href="#e3">Centrales de energías renovables</a></li>                           
-            </ul>
-          </div><!--/.well -->
+              <nav class="sidebar light">
+                <ul>                
+                  <li class="active"><a href="#"><i class="icon-home"></i>Contenidos</a></li> 
+                  <li><a href="#e1">Sistema de Información Energética (SIE)</a></li>
+                  <li><a href="#e2">Energías renovables</a></li>
+                  <li><a href="#e3">Centrales de energías renovables</a></li>                               
+                </ul>
+              </nav>
+          
         </div><!--/span-->
         <div class="span9">          
           <div class="row-fluid">
@@ -115,7 +116,7 @@
             	<p>Los incentivos de la CFE para la generación de energía eléctrica privada son:</p>
             	<ul>
             		<li>Banco de energía: permite la acumulación de excedentes de energía a los productores bajo en el esquema de autoabastecimiento para ser utilizados en el futuro o ser vendidos a la CFE.</li>
-            		<li>•	Tarifa preferencial para la transmisión de energía: Cargo por servicio de transmisión para energías renovables o cogeneración eficiente de $0.14 pesos/kWh, en lugar de $0.30-$0.40 pesos/kWh por fuentes tradicionales.</li>
+            		<li>Tarifa preferencial para la transmisión de energía: Cargo por servicio de transmisión para energías renovables o cogeneración eficiente de $0.14 pesos/kWh, en lugar de $0.30-$0.40 pesos/kWh por fuentes tradicionales.</li>
             	</ul>
             	<p>México es un país seguro para la inversión extranjera. El país cuenta con 28 APPRIs (Acuerdos para la Promoción y Protección Recíproca de las Inversiones) y acuerdos para evitar la doble tributación con más de 40 países.</p>            	
             </div>       

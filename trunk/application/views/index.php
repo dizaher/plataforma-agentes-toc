@@ -86,7 +86,7 @@
                         <!--MENU DE NAVEGACION-->
                         <nav class="navigation-bar light">
                             <div class="navigation-bar-content">
-                            <a href="#" class="element"><img src="<?php echo base_url(); ?>img/ico.png" alt="" ></a>                            
+                            <a href="#" class="element"> <img src="<?php echo base_url(); ?>img/iconTOC.png" alt="" >    </a>                       
                             <a class="pull-menu" href="#"></a>                    
                                 <ul class="element-menu drop-down">                        
                                     <li>
@@ -134,10 +134,8 @@
                                             <li><a href="<?php echo site_url('ctoc/cadenas') ?>">Cadenas y Sectores</a></li>
                                             <li><a href="<?php echo site_url('ctoc/prodserv') ?>">Productos y Servicios</a></li>
                                             <li><a href="<?php echo site_url('ctoc/apoyos') ?>">Apoyos</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/progcap') ?>">Programas de Capacitación</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/politicas') ?>">Políticas y Marco Jurídico</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/herramientas') ?>">Tecnológicas de Articulación</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/clientesec') ?>">Clientes y Sectores</a></li>                                                                                         
+                                            <li><a href="<?php echo site_url('ctoc/progcap') ?>">Programas de Capacitación</a></li>                                           
+                                            <li><a href="<?php echo site_url('ctoc/herramientas') ?>">Tecnológicas de Articulación</a></li>                                                                                                                                
                                         </ul>
                                     </li>                                    
                                     <li>
@@ -146,7 +144,7 @@
                                             <li><a href="<?php echo site_url('ctoc/mercado') ?>">Mercado</a></li>
                                             <li><a href="<?php echo site_url('ctoc/marco') ?>">Marco Regulatorio</a></li>
                                             <li><a href="<?php echo site_url('ctoc/capihumano') ?>">Capital Humano</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/finanincu') ?>">FIA</a></li>
+                                            <li><a href="<?php echo site_url('ctoc/finanincu') ?>">Financieras, Incubadoras y Aceleradoras</a></li>
                                             <li><a href="<?php echo site_url('ctoc/forta') ?>">Innovación Empresarial</a></li>
                                             <li><a href="<?php echo site_url('ctoc/genconocimiento') ?>">Conocimiento estratégico</a></li>                                                                                                       
                                         </ul>
@@ -160,7 +158,9 @@
                                             <li><a href="<?php echo site_url('ctoc/mecanismo') ?>">Coordinación entre Agentes</a></li>
                                             <li><a href="<?php echo site_url('ctoc/cuentas') ?>">Rendición de Cuentas</a></li>                                                        
                                         </ul>
-                                    </li>                                    
+                                    </li> 
+                                    <li><a href="<?php echo site_url('ctoc/interes') ?>">Sitios de interés</a></li>                                   
+                                    <li><a href="<?php echo site_url('ctoc/cie') ?>">Alíados</a></li>
                                 </ul>                    
                             </div>
                         </nav>

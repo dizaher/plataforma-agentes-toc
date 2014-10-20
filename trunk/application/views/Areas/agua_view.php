@@ -1,5 +1,5 @@
 			           			            			           			            			          
-	<div class="container">	
+	<div class="grid fluid">	
 	<div class="row">
 			<div class="span12">
 				<ul class="breadcrumb">
@@ -17,7 +17,7 @@
 				<p>Desde el punto de vista físico, el agua circula constantemente en un ciclo de evaporación o transpiración (evapotranspiración), precipitación, y desplazamiento hacia el mar. Los vientos transportan tanto vapor de agua como el que se vierte en los mares mediante su curso sobre la tierra, en una cantidad aproximada de 45.000 km³ al año. En tierra firme, la evaporación y transpiración contribuyen con 74.000 km³ anuales al causar precipitaciones de 119.000 km³ cada año.</p>				
 				<p>Se estima que aproximadamente el 70% del agua dulce es usada para agricultura.5 El agua en la industria absorbe una media del 20% del consumo mundial, empleándose en tareas de refrigeración, transporte y como disolvente de una gran variedad de sustancias químicas. El consumo doméstico absorbe el 10% restante.</p>
 				<p>El agua es esencial para la mayoría de las formas de vida conocidas por el hombre, incluida la humana. El acceso al agua potable se ha incrementado durante las últimas décadas en la superficie terrestre.7 8 Sin embargo estudios de la FAO, estiman que uno de cada cinco países en vías de desarrollo tendrá problemas de escasez de agua antes de 2030; en esos países es vital un menor gasto de agua en la agricultura modernizando los sistemas de riego.</p>				
-				<p><a class="btn" href="<?php echo base_url(); ?>documentos/Agua.pdf" target="_new">Ver detalles &raquo;</a></p>
+				<p><a class="button" href="<?php echo base_url(); ?>documentos/Agua.pdf" target="_new">Ver detalles &raquo;</a></p>
 			</div>
 		</div>			
 	</div>

@@ -1,5 +1,5 @@
 		           			            			           			            			          
-	<div class="container">	
+	<div class="grid fluid">	
 	<div class="row">
 			<div class="span12">
 				<ul class="breadcrumb">
@@ -29,11 +29,7 @@
 				<li><a href="#3" data-toggle="tab">Municipal</a></li>
 			</ul>
 			<div class="tab-content">
-				<div class="tab-pane active" id="1">
-			        <ul class="nav nav-pills">							    
-					    <li ><a href="#gf">Gobierno Federal</a></li>							    
-					    <li ><a href="#df">Delegaciones Federales en Veracruz</a></li>					   
-					</ul>
+				<div class="tab-pane active" id="1">			       
 					<h4 id="gf">Estructura de Gobierno Federal</h4>
 					<table class="table table-bordered">					    
 				        <tr>

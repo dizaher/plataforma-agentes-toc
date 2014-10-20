@@ -1,5 +1,5 @@
 				           			            			           			            			         
-	<div class="container">	
+	<div class="grid fluid">	
 	<div class="row">
 		<div class="span12">
 			<ul class="breadcrumb">
@@ -90,9 +90,9 @@
 					<td>presidencia16@hotmail.com</td>
 				</tr>
 			</table>
-			<p>Fuente: Instituto Nacional del Emprendedor-Secretaria de Economía;<a href="https://www.inadem.gob.mx/incubadoras_y_aceleradoras.html " target="_new">Clic para más detalles</a></p>
-			<p>Directorio Aceleradoras Internacionales<a class="btn" href="<?php echo base_url(); ?>documentos/aceleradorasinter.pdf" target="_new">Ver directorio &raquo;</a></p>
-			<p>Directorio Aceleradoras Nacionales<a class="btn" href="<?php echo base_url(); ?>documentos/aceleradorasnac.pdf" target="_new">Ver directorio &raquo;</a></p>
+			<p>Fuente: Instituto Nacional del Emprendedor-Secretaria de Economía;<a class="button" href="https://www.inadem.gob.mx/incubadoras_y_aceleradoras.html " target="_new">Clic para más detalles</a></p>
+			<p>Directorio Aceleradoras Internacionales<a class="button" href="<?php echo base_url(); ?>documentos/aceleradorasinter.pdf" target="_new">Ver directorio &raquo;</a></p>
+			<p>Directorio Aceleradoras Nacionales<a class="button" href="<?php echo base_url(); ?>documentos/aceleradorasnac.pdf" target="_new">Ver directorio &raquo;</a></p>
 		</div>
 	</div>
 	</div>
