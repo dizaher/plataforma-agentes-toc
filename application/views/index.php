@@ -160,7 +160,7 @@
                                         </ul>
                                     </li> 
                                     <li><a href="<?php echo site_url('ctoc/interes') ?>">Sitios de interés</a></li>                                   
-                                    <li><a href="<?php echo site_url('ctoc/cie') ?>">Alíados</a></li>
+                                    <li><a href="<?php echo site_url('ctoc/cie') ?>">Aliados</a></li>
                                 </ul>                    
                             </div>
                         </nav>
