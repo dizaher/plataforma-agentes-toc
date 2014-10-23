@@ -930,11 +930,11 @@ a {
 }
 .metro a,
 .metro .link {
-  color: #2e92cf;
+  color: #585858;
 }
 .metro a:hover,
 .metro .link:hover {
-  color: rgba(45, 173, 237, 0.8);
+  color: #06385c;
 }
 .metro a:focus,
 .metro .link:focus,
@@ -6173,7 +6173,8 @@ a {
   background-color: #ffffff;
 }
 .metro .sidebar.light li a:hover {
-  background-color: #00aff0;
+  background-color: #d8d8d8;
+  color: #000;
 }
 .metro .sidebar.light li ul {
   background-color: #ffffff;
@@ -6191,8 +6192,8 @@ a {
   color: #999999;
 }
 .metro .sidebar.light li.active a {
-  background-color: #1ba1e2;
-  color: #ffffff;
+  background-color: #d8d8d8;
+  color: #000;
 }
 .metro .accordion > .accordion-frame {
   border: 1px #eaeaea solid;

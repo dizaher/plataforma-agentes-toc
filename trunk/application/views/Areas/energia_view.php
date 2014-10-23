@@ -9,9 +9,8 @@
 					<li class="active">Energía</li>
 				</ul>
 			</div>
-		</div>
-		<div class="container-fluid">
-      <div class="row-fluid">
+		</div>		
+      <div class="row">
         <div class="span3">
               <nav class="sidebar light">
                 <ul>                
@@ -23,20 +22,13 @@
               </nav>
           
         </div><!--/span-->
-        <div class="span9">          
-          <div class="row-fluid">
-            <div class="span6">
+        <div class="span9">                    
               <h3>Misión</h3>
-              <p>Conducir la política energética del país, dentro del marco constitucional vigente, para garantizar el suministro competitivo, suficiente, de alta calidad, económicamente viable y ambientalmente sustentable de energéticos que requiere el desarrollo de la vida nacional.</p>              
-            </div><!--/span-->
-            <div class="span6">
+              <p>Conducir la política energética del país, dentro del marco constitucional vigente, para garantizar el suministro competitivo, suficiente, de alta calidad, económicamente viable y ambientalmente sustentable de energéticos que requiere el desarrollo de la vida nacional.</p>                          
               <h3>Visión</h3>
               <p>Una población con acceso pleno a los insumos energéticos, a precios competitivos; con empresas públicas y privadas de calidad mundial, operando dentro de un marco legal y regulatorio adecuado.</p>
-              <p>Con un firme impulso al uso eficiente de la energía y a la investigación y desarrollo tecnológicos; con amplia promoción del uso de fuentes alternativas de energía; y con seguridad de abasto.</p>              
-            </div><!--/span-->            
-          </div><!--/row-->
-          <div class="row-fluid">
-            <div class="span12">
+              <p>Con un firme impulso al uso eficiente de la energía y a la investigación y desarrollo tecnológicos; con amplia promoción del uso de fuentes alternativas de energía; y con seguridad de abasto.</p>                          
+              <hr>
               <h3 id="e1">Sistema de Información Energética (SIE)</h3>
               <p><a href="http://sie.energia.gob.mx/">http://sie.energia.gob.mx/</a></p>
               <p>El Sistema de Información Energética reúne información en una base de datos alimentada por las empresas, comisiones e institutos que forman el sector energético en México, así como por la Secretaría de Energía. </p>
@@ -60,8 +52,7 @@
               	<li>Consumo de energía en el sector industrial</li>
               	<li>Consumo de combustibles para la generación de electricidad</li>
               </ul>
-            </div><!--/span-->  
-            <div class="span12">
+              <hr>
             	<h3 id="e2">Energías renovables, En el mundo</h3>
             	<p>En 2011, las energías renovables representaron el 20.3% del total de generación de energía eléctrica en el mundo.</p>
             	<p>En el mismo periodo, las inversiones mundiales en el sector fueron de 257,000 md, lo que significó un incremento de 17% con respecto al año anterior.</p>
@@ -87,8 +78,7 @@
             	<p>La meta del gobierno federal es alcanzar una capacidad instalada de tecnologías limpias de 35% para el año 2024.</p>
             	<p>Se estima que para 2025 se incrementen 18,716 MW a la ya existente capacidad instalada para la generación de electricidad a partir de energías renovables, liderada por una mayor participación del sector eólico (60.3%) e hidráulico (24.3%).</p>
             	<img src="<?php echo base_url(); ?>img/Imagenes/en4.jpg" alt="">
-            </div>   
-            <div class="span12">
+              <hr>
             	<h3 id="e3">Centrales de energías renovables</h3>
             	<p>A febrero de 2012, en México se registraron 204 centrales en operación y en construcción para la generación de energía eléctrica a través de fuentes renovables; Oaxaca y Veracruz son los estados con mayor número de proyectos eólicos y de bioenergéticos, respectivamente.</p>
             	<img src="<?php echo base_url(); ?>img/Imagenes/en5.jpg" alt="">
@@ -118,9 +108,6 @@
             		<li>Banco de energía: permite la acumulación de excedentes de energía a los productores bajo en el esquema de autoabastecimiento para ser utilizados en el futuro o ser vendidos a la CFE.</li>
             		<li>Tarifa preferencial para la transmisión de energía: Cargo por servicio de transmisión para energías renovables o cogeneración eficiente de $0.14 pesos/kWh, en lugar de $0.30-$0.40 pesos/kWh por fuentes tradicionales.</li>
             	</ul>
-            	<p>México es un país seguro para la inversión extranjera. El país cuenta con 28 APPRIs (Acuerdos para la Promoción y Protección Recíproca de las Inversiones) y acuerdos para evitar la doble tributación con más de 40 países.</p>            	
-            </div>       
-          </div><!--/row-->
-        </div><!--/span-->
+            	<p>México es un país seguro para la inversión extranjera. El país cuenta con 28 APPRIs (Acuerdos para la Promoción y Protección Recíproca de las Inversiones) y acuerdos para evitar la doble tributación con más de 40 países.</p>            	            
       </div><!--/row-->			
 	</div>		
