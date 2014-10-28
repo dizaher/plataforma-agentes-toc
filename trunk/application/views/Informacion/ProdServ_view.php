@@ -6,7 +6,7 @@
 					<li>
 						<a href="<?php echo site_url('ctoc') ?>">Principal</a> <span class="divider">/</span>
 					</li>					
-					<li class="active">Productos y Servicios</li>
+					<li class="active">Ecotecnologías</li>
 				</ul>
 			</div>
 		</div>

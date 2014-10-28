@@ -131,13 +131,18 @@
                                         <ul class="dropdown-menu" data-role="dropdown">
                                             <li><a href="<?php echo site_url('ctoc/estudios') ?>">Estudios</a></li>
                                             <li><a href="<?php echo site_url('ctoc/programas') ?>">Programas</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/cadenas') ?>">Cadenas y Sectores</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/prodserv') ?>">Productos y Servicios</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/apoyos') ?>">Apoyos</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/progcap') ?>">Programas de Capacitación</a></li>                                           
+                                            <li><a href="<?php echo site_url('ctoc/cadenas') ?>">Cadenas y Sectores</a></li>                                           
+                                            <li><a href="<?php echo site_url('ctoc/apoyos') ?>">Apoyos</a></li>                                                                                    
                                             <li><a href="<?php echo site_url('ctoc/herramientas') ?>">Tecnológicas de Articulación</a></li>                                                                                                                                
                                         </ul>
-                                    </li>                                    
+                                    </li> 
+                                    <li>
+                                        <a class="dropdown-toggle" href="#">Productos y Servicios<b class="caret"></b></a>
+                                        <ul class="dropdown-menu" data-role="dropdown">
+                                            <li><a href="<?php echo site_url('ctoc/progcap') ?>">Programas de Capacitación</a></li>
+                                            <li><a href="<?php echo site_url('ctoc/prodserv') ?>">Ecotecnologías</a></li>                                                                                                                                                
+                                        </ul>
+                                    </li>                                   
                                     <li>
                                         <a class="dropdown-toggle" href="#">Pilares<b class="caret"></b></a>
                                         <ul class="dropdown-menu" data-role="dropdown">
