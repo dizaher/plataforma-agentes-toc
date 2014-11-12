@@ -14,7 +14,7 @@
 			<div class="span12">												
 		        <h4>Educación</h4>
 		        <p>Sistema Educativo de los Estados Unidos Mexicanos <br/>Principales cifras, ciclo escolar 2011-2012</p>
-		        <p><a class="button" href="<?php echo base_url(); ?>documentos/educacion.pdf" target="_new">Ver documento &raquo;</a></p>
+		        <p><a class="button" href="<?php echo base_url(); ?>documentos/educacion.PDF" target="_new">Ver documento &raquo;</a></p>
 			</div>
 		</div>			
 	</div>		

@@ -31,7 +31,7 @@
 			    </address>
 				<hr>
 			    <address>
-			    	<p><strong>Yessica Gómez Apodaca</strong></p>					    
+			    	<p><strong>LC.Yessica Gómez Apodaca</strong></p>					    
 				    <p>Administración Financiera</p>
 				    <p><a href="mailto:#">ygomez@tocveracruz.com.mx</a></p>					    
 				    <p>Calle México No. 34, Colonia Pumar, CP 91040</p>
