@@ -92,8 +92,7 @@
                                     <li>
                                         <a class="dropdown-toggle" href="#">Inicio</a>                              
                                         <ul class="dropdown-menu" data-role="dropdown">
-                                            <li><a href="<?php echo site_url('ctoc/quienes') ?>">Quiénes Somos</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/servicios') ?>">Productos y Servicios</a></li>
+                                            <li><a href="<?php echo site_url('ctoc/quienes') ?>">Quiénes Somos</a></li>                                            
                                             <li><a href="<?php echo site_url('ctoc/difusion') ?>">Noticias y Difusión</a></li>
                                             <li><a href="<?php echo site_url('ctoc/operaytec') ?>">Operaciones y Tecnologías</a></li>
                                             <li><a href="<?php echo site_url('ctoc/contacto') ?>">Contacto</a></li>                                   
@@ -148,8 +147,7 @@
                                         <ul class="dropdown-menu" data-role="dropdown">
                                             <li><a href="<?php echo site_url('ctoc/mercado') ?>">Mercado</a></li>
                                             <li><a href="<?php echo site_url('ctoc/marco') ?>">Marco Regulatorio</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/capihumano') ?>">Capital Humano</a></li>
-                                            <li><a href="<?php echo site_url('ctoc/finanincu') ?>">Financieras, Incubadoras y Aceleradoras</a></li>
+                                            <li><a href="<?php echo site_url('ctoc/capihumano') ?>">Capital Humano</a></li>                                           
                                             <li><a href="<?php echo site_url('ctoc/forta') ?>">Innovación Empresarial</a></li>
                                             <li><a href="<?php echo site_url('ctoc/genconocimiento') ?>">Conocimiento estratégico</a></li>                                                                                                       
                                         </ul>
