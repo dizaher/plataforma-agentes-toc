@@ -14,6 +14,7 @@ class Cregistro extends CI_Controller {
  {
    parent::__construct();
    $this->load->model('muser','',TRUE);
+   $this->load->library("encrypt");
  }
 
  function index()
@@ -24,7 +25,7 @@ class Cregistro extends CI_Controller {
     $this->form_validation->set_rules('nom','Nombre','required|trim|xss_clean');        
     $this->form_validation->set_rules('ape','Apellidos','required|trim|xss_clean');
     $this->form_validation->set_rules('correo','Correo','required|valid_email|trim|xss_clean|callback_check_database');
-    $this->form_validation->set_rules('contra','Contraseña','required|trim|xss_clean|md5|min_length[5]');
+    $this->form_validation->set_rules('contra','Contraseña','required|trim|xss_clean|min_length[5]');
     $this->form_validation->set_rules('contra2','Repetir contraseña','required|trim|xss_clean|min_length[5]|matches[contra]');                
     
 
@@ -39,9 +40,10 @@ class Cregistro extends CI_Controller {
         $nombre = $this->input->post('nom');
         $apellido = $this->input->post('ape');
         $correo_e = $this->input->post('correo');
-        $contrasenia = $this->input->post('contra');
+        $contrasenia = $this->input->post('contra'); 
+        $p = $this->encrypt->encode($contrasenia);
                 //ENVÍAMOS LOS DATOS AL MODELO CON LA SIGUIENTE LÍNEA
-        $result = $this->muser->new_user($nombre,$apellido,$correo_e,$contrasenia);//SE GUARDA EL USUARIO EN LA BASE DE DATOS 
+        $result = $this->muser->new_user($nombre,$apellido,$correo_e,$p);//SE GUARDA EL USUARIO EN LA BASE DE DATOS 
         if ($result) {
           $this->session->set_userdata('usuario', $nombre);               
           $data['contenido']='noticias_view';
