@@ -14,6 +14,7 @@ class Cingreso extends CI_Controller {
  {
    parent::__construct();
    $this->load->model('muser','',TRUE);
+   $this->load->library("encrypt");
  }
 
  function index()
@@ -21,49 +22,49 @@ class Cingreso extends CI_Controller {
    //El método tiene la validación de credenciales o usuarios
    $this->load->library('form_validation');
 
-   $this->form_validation->set_rules('usuario', 'Nombre de usuario', 'trim|required|xss_clean');
+   $this->form_validation->set_rules('correo', 'Nombre de usuario','trim|required|xss_clean');
    $this->form_validation->set_rules('clave', 'Contraseña', 'trim|required|xss_clean|callback_busca_usuario');
 
    if($this->form_validation->run() == FALSE)
    {
      //Validación de campo fallado. Usuario redirigido a la página iniciar sesión
-        $data['contenido']='noticias_view';
+        $data['contenido']='ingreso_view';
         $this->load->view('index',$data);
    }
    else
-   {
-     //Go to private area
-     redirect('ctoc', 'refresh');
+   {                     
+      $data['contenido']='noticias_view';
+      $this->load->view('session_view',$data);
    }
 
  }
 
- function busca_usuario($password)
+ function busca_usuario($clave)
  {
    //Validación de campo tuvo éxito. Validar contra la base de datos
-   $username = $this->input->post('username');
+   $usuario = $this->input->post('correo');        
 
    //consultar la base de datos
-   $result = $this->muser->busca_user($username, $password);
+   $result = $this->muser->busca_user($usuario);
 
    if($result)
-   {
-     $sess_array = array();
-     foreach($result as $row)
-     {
-       $sess_array = array(
-         'cve_usuario' => $row->cve_usuario,
-         'nombre' => $row->nombre,
-         'perfil_cve_perfil' => $row->perfil_cve_perfil
-       );
-       $this->session->set_userdata('usuario', $usuario);
-     }
-     return TRUE;
-   }
-   else  { 
-     $this->form_validation->set_message('busca_usuario', 'Tu usuario o contraseña es incorrecta');
-     return false;
-   }
+   {      
+      foreach($result as $row)
+      {          
+        if ($this->encrypt->decode($row->atu_clave)==$clave) {
+          
+          return TRUE;  
+        }
+        else{
+          $this->form_validation->set_message('busca_usuario', 'Tu usuario o contraseña es incorrecta');
+          return false;
+        }
+      }                
+    }
+    else{
+      $this->form_validation->set_message('busca_usuario', 'El usuario no se encuentra en la base de datos');
+          return false;
+    }   
  }
 }
 ?>

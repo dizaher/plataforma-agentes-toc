@@ -8,13 +8,13 @@ class Muser extends CI_Model
 	
 	//realizamos la inserción de los datos y devolvemos el 
 	//resultado al controlador para envíar el correo si todo ha ido bien
-	function new_user($nombre,$apellido,$correo_e,$contrasenia)
+	function new_user($nombre,$apellido,$correo_e,$p)
 	{
        $data = array(
             'atu_nombre' => $nombre,
             'atu_apellidos' => $apellido,
             'atu_correo' => $correo_e,
-            'atu_clave' => $contrasenia
+            'atu_clave' => $p
         );
        	return $this->db->insert('at_users', $data);	
     }
@@ -31,13 +31,11 @@ class Muser extends CI_Model
         }
 	 }
 
-     function busca_user($username, $password)
+     function busca_user($usuario)
      {
-       $this -> db -> select('cve_usuario, nombre, clave, perfil_cve_perfil');
-       $this -> db -> from('usuarios');
-       $this -> db -> where('nombre', $username);
-       $this -> db -> where('clave', $password);
-       $this -> db -> limit(1);
+       $this -> db -> select('atu_nombre, atu_clave');
+       $this -> db -> from('at_users');
+       $this -> db -> where('atu_correo', $usuario);          
 
        $query = $this -> db -> get();
 

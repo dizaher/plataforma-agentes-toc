@@ -35,40 +35,7 @@
         .container {
             width: 1040px;
         }
-    </style>
-    <script>
-    $(function(){
-                                         
-        $("#createFlatWindow").on('click', function(){
-            $.Dialog({
-                overlay: true,
-                shadow: true,
-                flat: true,
-                width:500,
-                draggable: true,                
-                title: 'Flat window',
-                content: '',
-                padding: 10,
-                onShow: function(_dialog){
-                    var content = '<?php echo form_open("cingreso"); ?>' +
-                            '<?php echo validation_errors('<button class="warning">', '</button><br>'); ?>' +
-                            '<label>Correo electrónico o usuario</label>' +
-                            '<div class="input-control text"><input type="text" name="usuario" value="<?php echo set_value("usuario"); ?>"><button class="btn-clear"></button></div>' +
-                            '<label>Contraseña</label>'+
-                            '<div class="input-control password"><input type="password" name="clave"><button class="btn-reveal"></button></div>' +                            
-                            '<div class="form-actions">' +
-                            '<button class="button primary">Ingresar...</button>&nbsp;'+
-                            '<button class="button" type="button" onclick="$.Dialog.close()">Cancelar</button> '+
-                            '</div>'+
-                            '</form>';
-
-                    $.Dialog.title("Iniciar Sesión");
-                    $.Dialog.content(content);
-                }
-            });
-        });                        
-    })
-</script>
+    </style>    
 </head>
 <body class="metro">
   <div class="container">
@@ -204,7 +171,7 @@
                                     </a>
                                     <ul class="dropdown-menu place-right" data-role="dropdown">
                                     <li><a href="<?php echo site_url('ctoc/registro') ?>">Registro</a></li>
-                                    <li><a href="#" id="createFlatWindow">Ingresar</a></li>                                                                
+                                    <li><a href="<?php echo site_url('ctoc/ingreso') ?>">Ingresar</a></li>                                                                
                                     </ul>
                                 </div>                                                
                             </div>
