@@ -50,14 +50,15 @@ class Cingreso extends CI_Controller {
    if($result)
    {      
       foreach($result as $row)
-      {          
-        if ($this->encrypt->decode($row->atu_clave)==$clave) {
-          
+      {    
+               
+        if ($this->encrypt->decode($row->atu_clave) == $clave) {          
           return TRUE;  
         }
         else{
-          $this->form_validation->set_message('busca_usuario', 'Tu usuario o contraseña es incorrecta');
+          $this->form_validation->set_message('busca_usuario', 'Tu usuario o contraseña es incorrecta');                  
           return false;
+
         }
       }                
     }
