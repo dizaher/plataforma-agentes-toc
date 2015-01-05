@@ -44,6 +44,12 @@ class Ctocadmin extends CI_Controller {
 
 	    /* Asignamos el idioma español */
 	    $crud->set_language('spanish');
+	    $crud->display_as('atu_nombre','Titulo de la noticia');
+	    $crud->display_as('atu_descripcion','Redacción de la noticia');
+	    $crud->display_as('atu_imagen','Insertar imagen');
+	    $crud->display_as('atu_fecha','Fecha');
+	    /* Asignamos el directorio de la subida de imagenes */
+	    $crud->set_field_upload('atu_imagen','img/Noticias');
 
 	    /* Aqui le decimos a grocery que estos campos son obligatorios */
 	    $crud->required_fields(
