@@ -34,7 +34,7 @@ class Ctocadmin extends CI_Controller {
 	    $crud = new grocery_CRUD();
 
 	    /* Seleccionamos el tema */
-	    $crud->set_theme('flexigrid');
+	    $crud->set_theme('datatables');
 
 	    /* Seleccionmos el nombre de la tabla de nuestra base de datos*/
 	    $crud->set_table('at_noticias');
@@ -48,9 +48,11 @@ class Ctocadmin extends CI_Controller {
 	    $crud->display_as('atu_descripcion','Redacción de la noticia');
 	    $crud->display_as('atu_imagen','Insertar imagen');
 	    $crud->display_as('atu_fecha','Fecha');
+	    $crud->field_type('fruits','multiselect',
+                   array( "1"  => "banana", "2" => "orange", "3" => "apple"));
 	    /* Asignamos el directorio de la subida de imagenes */
 	    $crud->set_field_upload('atu_imagen','img/Noticias');
-
+	    
 	    /* Aqui le decimos a grocery que estos campos son obligatorios */
 	    $crud->required_fields(
 	      'atu_idnotice',

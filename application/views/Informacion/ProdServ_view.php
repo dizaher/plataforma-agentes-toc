@@ -16,8 +16,7 @@
 				<ul>
 					<li>Generadores eólicos</li>
 					<li>Biodigestores</li>
-					<li>Reactores para biodiesel y etanol</li>
-					<li>Generadores magnéticos</li>
+					<li>Reactores para biodiesel y etanol</li>					
 					<li>Sistemas de administración de agua residual</li>
 					<li>Condensadores</li>
 					<li>Lombricompostarios</li>
