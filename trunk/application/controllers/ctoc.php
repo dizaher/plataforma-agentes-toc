@@ -404,6 +404,20 @@ class Ctoc extends CI_Controller {
 	  	$this->load->view('index',$data); 
 	  }
 	 }
+
+
+	 public function asesorias()
+	 {
+	  $data['contenido']='Informacion/asesorias_view';//Nombre de carpeta y nombre de la vista
+	  if($this->session->userdata('usuario'))//si hay sesion iniciada 
+	   {	                           
+         $this->load->view('session_view',$data);   	     
+	   }
+	   else//si no hay sesion iniciada
+	   {
+	  	$this->load->view('index',$data); 
+	  }
+	 }
 	 /////////////////////////////////////////////////////////////////////////////////////
 	 //////////////////////CARPETA PILARES ///////////////////////////////////////////
 	 /////////////////////////////////////////////////////////////////////////////////////	 
