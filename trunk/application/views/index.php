@@ -13,7 +13,7 @@
     <link href="<?php echo base_url(); ?>css/metro-bootstrap-responsive.css" rel="stylesheet">  
     <link href="<?php echo base_url(); ?>css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url(); ?>min/iconFont.min.css">  
-    <link href="<?php echo base_url(); ?>css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+
 
     <!-- Load JavaScript Libraries -->
     <script src="<?php echo base_url(); ?>js/jquery-2.0.0.js"></script>
@@ -30,6 +30,7 @@
 
     <!-- Local JavaScript -->   
     <script src="<?php echo base_url(); ?>min/metro.min.js"></script>    
+    <script src="<?php echo base_url(); ?>min/metro-bootstrap-responsive.min.css"></script>
 
     <style>
         .container {
