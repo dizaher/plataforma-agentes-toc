@@ -1,3 +1,7 @@
+@font-face{
+  font-family: contacto;
+  src:url('fonts/BreeSerif-Regular.otf') format("opentype");
+}
 .piePagina{
 	text-align:center;
 	padding:20px;
@@ -76,4 +80,12 @@
 
 .breadcrumb > .active {
   color: #999999;
+}
+
+#contacto{
+  font-family: contacto;
+  font-size: 36px;
+  color: blue;
+  text-align: center;
+  text-shadow:2px 2px 1px gray;
 }
