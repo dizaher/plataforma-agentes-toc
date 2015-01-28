@@ -10746,7 +10746,7 @@ a {
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: 19px;/*MARGEN PUESTO AL MOSTRARSE EL FRAME*/
-  border-right: 1px solid #06385c;/*BORDE DERECHO EN DONDE EMPIEZA LA REDACCION DEL TEMA*/
+  border-right: 1px solid #eee;/*BORDE DERECHO EN DONDE EMPIEZA LA REDACCION DEL TEMA*/
 }
 
 .tabs-left > .nav-tabs > li > a {
@@ -10764,7 +10764,7 @@ a {
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .nav-tabs .active > a:focus {
-  border-color: #06385c transparent #06385c #06385c;
+  border-color: #eee transparent #eee #eee;
   *border-right-color: #ffffff;
   border-left: 3px solid #06385c;
   
@@ -10827,7 +10827,7 @@ a {
 .nav > li > a {
     display: block;
     color: #000;
-    width: auto;
+    width: 150px;
         
 }
 .nav > li > a:hover {    

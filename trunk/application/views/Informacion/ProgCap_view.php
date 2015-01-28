@@ -21,11 +21,40 @@
                     </ul>
                     <div class="tab-content">
                          <div class="tab-pane active" id="1">
-                              <h5>Tecnico instalador de calentadores solares</h5>
+                              <h5>Técnico instalador de calentadores solares</h5>
                               <p>El presente curso surge con base a estandarizar, homogenizar y tener herramientas para satisfacer los requerimientos que el perfil de un  técnico debe cumplir para instalar Calentadores Solares.</p>
-                              <p>Esto sumándole a los conocimientos técnicos propios del grupo a quien se dirige este curso, una especialización para usar sus habilidades focalizadas en temas de calentadores solares, con temas básicos sobre aprovechamiento de energía solar.</p>
-                              <p>Además de la creciente demanda que este tema ha mostrado en el país (ahora vemos que constructoras, ya equipan las casas de interés social con esta tecnología), lo cual es una gran área de oportunidad para la región de Veracruz para implementarlos, en hogares; y por qué no qué quienes tengan estos conocimientos generen su empresa para brindar el servicio de asesoría e instalación de Calentadores Solares o en otros casos construcción en situ.</p>
-                              <p>Por todo lo ya citado es que TOC, TECHNOLOGY OUTSOURCING CENTER SA DE CV, se da a la tarea de formular el presente curso para formar técnicos instaladores de Calentadores Solares, con especial enfoque en sus “Productos de Línea Verde”, pero dando herramientas para manejar otras marcas ajenas a la empresa.</p>                         
+                              <p>Con la creciente demanda que este tema ha mostrado en el país (ahora vemos que constructoras, ya equipan las casas de interés social con esta tecnología), lo cual es una gran área de oportunidad para la región de Veracruz para implementarlos, en hogares; y que quienes tengan estos conocimientos generen su empresa para brindar el servicio de asesoría e instalación de Calentadores Solares o en otros casos construcción en situ.</p>                         
+                              <h5>Contenido del programa</h5>
+                              <p>El curso está planeado para un aproximado de 15 hrs. En las cuales se abordarán los temas que a continuación se enlistan, de manera teórica, y se abordaran algunos ejemplos prácticos, para lograr un aprendizaje significativo de los temas.</p>
+                              <ul>
+                                   <li>Seguridad e Higiene en el área de trabajo</li>
+                                   <li>Equipo de seguridad y Protección Personal (EPP).</li>
+                                   <li>Interpretación y diseño de dibujos Isométricos (3D) y planos (2D).</li>
+                                   <li>Recorridos y conexiones en líneas de agua fría, caliente y drenaje.</li>
+                                   <li>Identificación de riesgos potenciales en el área designada para la instalación.</li>
+                                   <li>Las condiciones climáticas que influyen en la instalación del sistema de calentamiento solar de agua.</li>
+                                   <li>Descripción de un sistema de gravedad / de presión.</li>
+                                   <li>Principios de radiación solar.</li>
+                                   <li>Funcionamiento de los sistemas de calentamiento solar de agua.</li>
+                                   <li>Tipos de sistemas de calentamiento solar de agua.</li>
+                                   <li>Tipos de arreglos hidráulicos y accesorios utilizados en la instalación del sistema de calentamiento solar de agua.</li>
+                                   <li>Tipos de materiales de tubería y su aislamiento utilizados en la instalación del sistema de calentamiento solar de Agua.</li>
+                              </ul>
+
+                              <h5>Dirigido a:</h5>
+                              <ul>
+                                   <li>Grupo unitario: Plomeros, fontaneros, instaladores de tuberías y Ocupaciones asociadas:</li>
+                                   <li>
+                                        <ul>
+                                             <li>Plomero </li>
+                                             <li>Fontanero</li>
+                                             <li>Instalador de tubería de agua, gas, etc.</li>
+                                        </ul>
+                                   </li>
+                                   <li>Estudiantes de algún centro de capacitación para el trabajo en áreas relacionadas con las citadas ocupaciones en el punto anterior.</li>
+                                   <li>Estudiantes de bachilleres tecnológicos (CBTis, CTIS, CONALEP, CBTas, etc.) con deseos de especializarse y/o adquirir conocimientos sobre instalación y construcción de Biodigestores (fundamentación teórica-técnica).</li>
+                              </ul>
+                              <p id="contacto">¿Te interesa?, Contáctanos</p>
                          </div>
                          <div class="tab-pane" id="2">
                               <h5>Técnico en desinstalación y manejo de productos de línea verde</h5>
