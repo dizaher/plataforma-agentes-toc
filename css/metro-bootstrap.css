@@ -1388,11 +1388,11 @@ a {
   margin-left: 980px !important;
 }
 .metro .grid {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .metro .grid .row {
   display: block;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .metro .grid .row:before,
 .metro .grid .row:after {
@@ -5708,7 +5708,7 @@ a {
 .metro .tab-control .tabs:before,
 .metro .tab-control .tabs:after {
   display: table;
-  /*content: "";*/
+  content: "";
 }
 .metro .tab-control .tabs:after {
   clear: both;
@@ -5719,13 +5719,12 @@ a {
   float: left;
   margin-left: 5px;
   position: relative;
-  clear: both;
 }
 .metro .tab-control .tabs > li > a {
   border: 1px #eeeeee solid;
   display: block;
   float: left;
-  padding: 10px;
+  padding: 5px 10px;
   z-index: 10;
   top: 0;
   left: 0;
@@ -5735,7 +5734,7 @@ a {
 .metro .tab-control .tabs > li.active a {
   border-bottom-color: #ffffff;
   background-color: #ffffff;
-  border-left: 2px #0e793e solid;
+  border-left: 2px #e51400 solid;
 }
 .metro .tab-control .tabs > li.active:hover a {
   background-color: #ffffff;
@@ -5757,7 +5756,6 @@ a {
   z-index: 1;
   border: 1px #eeeeee solid;
   margin-top: -1px;
-  overflow: auto;
 }
 .metro .tab-control .frames .frame {
   display: none;
@@ -5767,14 +5765,6 @@ a {
 }
 .metro .tab-control .frame {
   padding: 20px;
-}
-.metro .progress-bar {
-  display: block;
-  position: relative;
-  height: 10px;
-  width: 100%;
-  margin-bottom: 10px;
-  background-color: #eeeeee;
 }
 .metro .progress-bar:before,
 .metro .progress-bar:after {
@@ -10755,8 +10745,8 @@ a {
 
 .tabs-left > .nav-tabs {
   float: left;
-  margin-right: 19px;
-  border-right: 1px solid #555;
+  margin-right: 19px;/*MARGEN PUESTO AL MOSTRARSE EL FRAME*/
+  border-right: 1px solid #06385c;/*BORDE DERECHO EN DONDE EMPIEZA LA REDACCION DEL TEMA*/
 }
 
 .tabs-left > .nav-tabs > li > a {
@@ -10774,8 +10764,10 @@ a {
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .nav-tabs .active > a:focus {
-  border-color: #555 transparent #555 #555;
+  border-color: #06385c transparent #06385c #06385c;
   *border-right-color: #ffffff;
+  border-left: 3px solid #06385c;
+  
 }
 
 .tabs-right > .nav-tabs {
@@ -10813,7 +10805,7 @@ a {
     list-style: none outside none;
 }
 .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
-    color: #555;
+    color: #000;
     cursor: default;
     background-color: #FFF;
     border-width: 1px;
@@ -10829,13 +10821,15 @@ a {
     padding-top: 8px;
     padding-bottom: 8px;
     line-height: 20px;
-    border: 1px solid transparent;
-    border-radius: 4px 4px 0px 0px;
+    /*border: 1px solid transparent;*/ /*BORDE AL PASAR EL RATON SOBRE EL LINK
+    border-radius: 4px 4px 0px 0px;*/
 }
 .nav > li > a {
     display: block;
     color: #000;
+    width: auto;
+        
 }
 .nav > li > a:hover {    
-    color: #555;
+    color: #06385c;
 }

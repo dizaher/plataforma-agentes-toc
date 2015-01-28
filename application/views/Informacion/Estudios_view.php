@@ -20,7 +20,7 @@
 				<p>En el siguiente estudio se analiza la prefactibilidad técnica, económica, junto con los recursos técnicos y humanos necesarios para el desarrollo, implementación y mantención del Sistema Multiagente Embebido (SME).</p>
 				<p>Se incluye también, un breve análisis del impacto social que provocará el SME ya que en México no estamos tan acostumbrados a la utilización de sistemas inteligentes en el hogar por tanto se prevé que será de gran impacto a la sociedad.</p>
 				<p>Como conclusión del estudio realizado, podemos determinar la factibilidad del proyecto, ya que el desarrollo de este estudio es tener un costo accesible para su desarrollo.</p>
-		        <p><a class="button" href="<?php echo base_url(); ?>documentos/EstudioPrefactibilidad.pdf" target="_new">Ver Documento &raquo;</a></p>
+		        
 			</div>
 		</div>			
 	</div>		
