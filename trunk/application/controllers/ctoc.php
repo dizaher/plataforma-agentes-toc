@@ -324,6 +324,19 @@ class Ctoc extends CI_Controller {
 	  }
 	 }
 
+	 public function proyectos()
+	 {
+	  $data['contenido']='Informacion/proyectos_view';//Nombre de carpeta y nombre de la vista
+	  if($this->session->userdata('usuario'))//si hay sesion iniciada 
+	   {	                           
+         $this->load->view('session_view',$data);   	     
+	   }
+	   else//si no hay sesion iniciada
+	   {
+	  	$this->load->view('index',$data); 
+	  }
+	 }
+
 	 public function programas()
 	 {
 	  $data['contenido']='Informacion/Programas_view';//Nombre de carpeta y nombre de la vista

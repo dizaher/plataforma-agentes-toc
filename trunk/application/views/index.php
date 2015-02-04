@@ -46,10 +46,9 @@
             <div class="row">
                 <div class="span8 place-left">
                     <a href="<?php echo site_url('ctoc') ?>">
-                    <img src="<?php echo base_url(); ?>img/Logo_TOC.png" alt="TOC" style="float:left"></a>                    
+                    <img src="<?php echo base_url(); ?>img/Logo_TOC.png" alt="TOC" style="float:left; margin-right:10px;"></a>                    
                 
-                    <h2 >TOC</h2>
-                    <h3 >Technology Outsourcing Center</h3>
+                    <h2 >TOC Technology Outsourcing Center</h2>                 
                     <h5 >Ecosistema de innovación</h6>
                 </div>
                 <div class="span4 place-right">
@@ -108,6 +107,7 @@
                                     <li>
                                         <a class="dropdown-toggle" href="#">I+D+i<b class="caret"></b></a>
                                         <ul class="dropdown-menu" data-role="dropdown">
+                                            <li><a href="<?php echo site_url('ctoc/proyectos') ?>">Proyectos</a></li>
                                             <li><a href="<?php echo site_url('ctoc/estudios') ?>">Estudios</a></li>                                            
                                             <li><a href="<?php echo site_url('ctoc/cadenas') ?>">Cadenas y Sectores</a></li>                                           
                                             <li><a href="<?php echo site_url('ctoc/apoyos') ?>">Apoyos</a></li>
@@ -157,7 +157,7 @@
                                                     <li><a href="<?php echo site_url('ctoc/mecanismo') ?>">Coordinación entre Agentes</a></li>
                                                     <li><a href="<?php echo site_url('ctoc/cuentas') ?>">Rendición de Cuentas</a></li>                                                        
                                                 </ul>
-                                            </li>                                                                                                                                                                                                                                                            
+                                            </li>                                                                                                                                                                                                                                                                                                      
                                         </ul>
                                     </li>
                                     
@@ -197,9 +197,10 @@
                 www.tocveracruz.com.mx, RFC: TTO0804297VA<br>
                 <a href="mailto:#">contacto@tocveracruz.com.mx</a>
                 </address>
-            </footer>
-            <small class="place-center">Apoyado</small><br><a href="http://www.conacyt.mx/" title="" target="_new">
-            <img align="center" src="http://www.coepesoaxaca.org.mx/wp-content/uploads/2012/03/conacyta.jpg" width="50px"></a>    
+            <center><small class="place-center">Apoyado por</small><br><a href="http://www.conacyt.mx/" title="" target="_new">
+            <img align="center" src="http://www.coepesoaxaca.org.mx/wp-content/uploads/2012/03/conacyta.jpg" width="50px"></a>
+            </center>
+            </footer>            
         </div>
   </div> <!-- /container -->  
 </body>
