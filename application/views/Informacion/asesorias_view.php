@@ -10,28 +10,35 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="span12">	
-
-			<div class="tabbable tabs-left">
-				<ul class="nav nav-tabs">
-					<li class="active"><a href="#1" data-toggle="tab">Sustentable</a></li>
-					<li><a href="#2" data-toggle="tab">Sistemas de Información</a></li>
-					
-				</ul>
-				<div class="tab-content">
-					<div class="tab-pane active" id="1">
-						<center>
-							<img src="<?php echo base_url(); ?>img/LogoRemodelacion.gif" >
-						</center>
-					</div>
-					<div class="tab-pane" id="2">
-						<center>
-							<img src="<?php echo base_url(); ?>img/LogoRemodelacion.gif" >
-						</center>
-					</div>
-					
-				</div>
-			</div>
+		<div class="span12">
+			<h4>Servicios</h4>
+		</div>
+	</div>
+	<div class="row">		
+		<div class="span3">	
+			<div class="notice marker-on-right bg-darkCyan fg-white">				
+				<p>¿Tienes una idea de proyecto y buscas una convocatoria que te ayude a realizarlo?</p>
+				<p>¡Nosotros te asesoramos en el desarrollo de tu propuesta!</p>
+				<p>Asesorías en proyectos tecnológicos y de innovación</p>
+			</div>			
+		</div>
+		<div class="span3">	
+			<div class="notice marker-on-right bg-darkCyan fg-white">
+				<p>¿Sabías que existen instituciones y dependencias que resultan una pieza clave en el desarrollo de proyectos e iniciativas emprendedoras?</p>
+				<p>Nosotros les denominamos agentes de la innovación, te brindamos apoyo para que identifiques al agente que más te fortalezca y te acompañamos durante el proceso de gestión de tus proyectos</p>			
+			</div>			
+		</div>
+		<div class="span3">	
+			<div class="notice marker-on-right bg-darkCyan fg-white">
+				<p>En el mercado existe una amplia gama de ecotecnologías, TOC, cuenta con las suyas…¿Te interesa crear un entorno sustentable en tu hogar u oficina?</p>
+				<p>Nosotros te asesoramos para que tomes la elección que más te convenga. Te ofrecemos:</p>
+				<p>Estudios técnicos en el área de uso y tratamiento agua, eficiencia energética y sistemas de alimentación alternativos.</p>			
+			</div>			
+		</div>
+		<div class="span3">	
+			<div class="notice bg-darkCyan fg-white">
+				<p>Aclaramos tus dudas sobre sistemas de tratamiento de agua, eficiencia energética y biocombustibles, sistemas de alimentación. </p>
+			</div>			
 		</div>
 	</div>			
 </div>		
