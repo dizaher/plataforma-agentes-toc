@@ -40,10 +40,37 @@ class Cregistro extends CI_Controller {
         $nombre = $this->input->post('nom');
         $apellido = $this->input->post('ape');
         $correo_e = $this->input->post('correo');
-        $contrasenia = $this->input->post('contra'); 
-        $p = $this->encrypt->encode($contrasenia);
+        $p = $this->input->post('contra');         
                 //ENVÍAMOS LOS DATOS AL MODELO CON LA SIGUIENTE LÍNEA
         $result = $this->muser->new_user($nombre,$apellido,$correo_e,$p);//SE GUARDA EL USUARIO EN LA BASE DE DATOS 
+
+        //***********************************************
+        $config = Array(
+        'protocol' => 'smtp',
+        'smtp_host' => 'mail.tocveracruz.com.mx',
+        'smtp_port' => 25,
+        'smtp_user' => 'dzacarias@tocveracruz.com.mx', // change it to yours
+        'smtp_pass' => 'wWeQ]T5B}(bo', // change it to yours
+        'mailtype' => 'html',
+        'charset' => 'iso-8859-1',
+        'wordwrap' => TRUE
+      );
+              
+            $this->load->library('email', $config);
+            $this->email->set_newline("\r\n");
+            $this->email->from('dzacarias@tocveracruz.com.mx'); // change it to yours
+            $this->email->to($correo_e);// change it to yours
+            $this->email->subject('Registro correcto');
+            $this->email->message('Gracias por registrarte');
+            if($this->email->send())
+           {
+            echo 'Email sent.';
+           }
+           else
+          {
+           show_error($this->email->print_debugger());
+          }
+        //**********************************************
         if ($result) {
           $this->session->set_userdata('usuario', $nombre);               
           $data['contenido']='noticias_view';
