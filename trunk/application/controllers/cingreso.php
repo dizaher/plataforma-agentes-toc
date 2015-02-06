@@ -43,7 +43,7 @@ class Cingreso extends CI_Controller {
  {
    //Validación de campo tuvo éxito. Validar contra la base de datos
    $usuario = $this->input->post('correo');        
-
+   $cla = md5($clave);
    //consultar la base de datos
    $result = $this->muser->busca_user($usuario);
 
@@ -52,7 +52,8 @@ class Cingreso extends CI_Controller {
       foreach($result as $row)
       {    
                
-        if ($this->encrypt->decode($row->atu_clave) == $clave) {          
+        if ($cla == $row->atu_clave) { 
+          $this->session->set_userdata('usuario', $row->atu_nombre);         
           return TRUE;  
         }
         else{

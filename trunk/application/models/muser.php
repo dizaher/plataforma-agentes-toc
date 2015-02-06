@@ -14,7 +14,7 @@ class Muser extends CI_Model
             'atu_nombre' => $nombre,
             'atu_apellidos' => $apellido,
             'atu_correo' => $correo_e,
-            'atu_clave' => $p
+            'atu_clave' => md5($p)
         );
        	return $this->db->insert('at_users', $data);	
     }

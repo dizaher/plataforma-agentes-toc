@@ -2,8 +2,8 @@
     <div class="row">
         <div class="carousel bg-transparent" id="carousel1">
           <div class="slide">
-            <div class="span1"></div>
-            <div class="span5">
+
+            <div class="span7">
               <div class="notice marker-on-right bg-lightBlue fg-white">
                 <h4>Producto piloto en energía: Calentador Solar</h4>
                 <p>La empresa TOC diseña y construye un calentador solar el cual tiene la función principal de calentar agua con la mayor parte de la energía solar que se pueda captar durante el día. Al desarrollar este producto el objetivo es lograr un ahorro en el consumo de gas, gracias al Calentador Solar se puede mantener el agua caliente durante todo el día sin hacer uso de combustible alguno.</p>                               
@@ -15,8 +15,8 @@
             </div>                                                                                         
           </div>
           <div class="slide">
-            <div class="span1"></div>
-            <div class="span5">
+            
+            <div class="span7">
               <div class="notice marker-on-right bg-lightBlue fg-white">
                 <h4>Producto piloto en energía: Generador Eólico</h4>
                 <p>La empresa TOC crea un Generador Eólico con un diseño único y funcional el cual busca aprovechar al máximo los vientos unidireccionales, predominantes en la zona de Xalapa y Veracruz. Un aspecto importante es que la Empresa TOC con este producto está generando una estrategia para el cuidado del medio ambiente y aprovechar las energías renovables.</p>              
@@ -28,8 +28,8 @@
             </div>
           </div>
           <div class="slide">
-            <div class="span1"></div>
-            <div class="span5">
+            
+            <div class="span7">
               <div class="notice marker-on-right bg-lightBlue fg-white">
                 <h4>Producto piloto en agua: Sistema de Administración de Agua Residencial SAAR</h4>
                 <p>El aumento en la demanda de agua provocado por el crecimiento acelerado de la población, la sobreexplotación de los ríos, arroyos y demás cuerpos de agua superficiales así como el uso irracional del recurso son algunas de las principales causas de la vulnerabilidad y paulatino agotamiento de las reservas.</p>              
@@ -47,7 +47,13 @@
       <script>
           $(function(){
               $("#carousel1").carousel({
-                  height: 400
+                  height: 400,
+                  effect: 'slowdown',
+                  markers: {
+                      show: true,
+                      type: 'square',
+                      position: 'bottom-right'
+                  }
               });
           })
       </script>

@@ -109,7 +109,25 @@
                                         <ul class="dropdown-menu" data-role="dropdown">
                                             <li><a href="<?php echo site_url('ctoc/proyectos') ?>">Proyectos</a></li>
                                             <li><a href="<?php echo site_url('ctoc/estudios') ?>">Estudios</a></li>                                            
-                                            <li><a href="<?php echo site_url('ctoc/cadenas') ?>">Cadenas y Sectores</a></li>                                           
+                                            <li><a href="<?php echo site_url('ctoc/cadenas') ?>">Cadenas y Sectores</a></li>                                                                                                                                   
+                                            <li>
+                                                <a class="dropdown-toggle" href="#">Agentes de Innovación</a>
+                                                <ul class="dropdown-menu" data-role="dropdown">
+                                                    <li><a href="<?php echo site_url('ctoc/empresas') ?>">Empresas</a></li>                     
+                                                    <li><a href="<?php echo site_url('ctoc/ies') ?>">IES</a></li>
+                                                    <li><a href="<?php echo site_url('ctoc/centros') ?>">Centros de Investigación</a></li>
+                                                    <li><a href="<?php echo site_url('ctoc/nivelesgobierno') ?>">Niveles de Gobierno</a></li>
+                                                    <li><a href="<?php echo site_url('ctoc/poderesgobierno') ?>">Poderes de Gobierno</a></li>
+                                                    <li><a href="<?php echo site_url('ctoc/finan') ?>">Financieras, Incubadoras y Aceleradoras</a></li>
+                                                    <li><a href="<?php echo site_url('ctoc/orgciviles') ?>">Organizaciones Civiles</a></li>
+                                                    <li><a href="<?php echo site_url('ctoc/sociedad') ?>">Sociedad en General</a></li>                 
+                                                </ul>
+                                            </li>                                                                                                                                                                                                                                                                                                                                                
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-toggle" href="#">Ecosistema<b class="caret"></b></a>
+                                        <ul class="dropdown-menu" data-role="dropdown">
                                             <li><a href="<?php echo site_url('ctoc/apoyos') ?>">Apoyos</a></li>
                                             <li>
                                                 <a class="dropdown-toggle" href="#">Áreas<b class="caret"></b></a>
@@ -123,19 +141,6 @@
                                                     <li><a href="<?php echo site_url('ctoc/residuos') ?>">Residuos Sólidos Urbanos</a></li>
                                                     <li><a href="<?php echo site_url('ctoc/salud') ?>">Salud</a></li>
                                                     <li><a href="<?php echo site_url('ctoc/educacion') ?>">Educación</a></li>                                                                
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-toggle" href="#">Agentes de Innovación</a>
-                                                <ul class="dropdown-menu" data-role="dropdown">
-                                                    <li><a href="<?php echo site_url('ctoc/empresas') ?>">Empresas</a></li>                     
-                                                    <li><a href="<?php echo site_url('ctoc/ies') ?>">IES</a></li>
-                                                    <li><a href="<?php echo site_url('ctoc/centros') ?>">Centros de Investigación</a></li>
-                                                    <li><a href="<?php echo site_url('ctoc/nivelesgobierno') ?>">Niveles de Gobierno</a></li>
-                                                    <li><a href="<?php echo site_url('ctoc/poderesgobierno') ?>">Poderes de Gobierno</a></li>
-                                                    <li><a href="<?php echo site_url('ctoc/finan') ?>">Financieras, Incubadoras y Aceleradoras</a></li>
-                                                    <li><a href="<?php echo site_url('ctoc/orgciviles') ?>">Organizaciones Civiles</a></li>
-                                                    <li><a href="<?php echo site_url('ctoc/sociedad') ?>">Sociedad en General</a></li>                 
                                                 </ul>
                                             </li>
                                             <li>
@@ -157,12 +162,9 @@
                                                     <li><a href="<?php echo site_url('ctoc/mecanismo') ?>">Coordinación entre Agentes</a></li>
                                                     <li><a href="<?php echo site_url('ctoc/cuentas') ?>">Rendición de Cuentas</a></li>                                                        
                                                 </ul>
-                                            </li>                                                                                                                                                                                                                                                                                                      
+                                            </li>
                                         </ul>
                                     </li>
-                                    
-                                                                                                                                                                                
-                                     
                                     <li><a href="<?php echo site_url('ctoc/interes') ?>">Sitios de interés</a></li>                                                                       
                                 </ul> 
                                 <div class="element place-right">
