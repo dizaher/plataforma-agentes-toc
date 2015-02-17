@@ -1,21 +1,25 @@
-		           			            			           			            			          
-	<div class="grid fluid">	
-	<div class="row">
-			<div class="span12">
-				<ul class="breadcrumb">
-					<li>
-						<a href="<?php echo site_url('ctoc') ?>">Principal</a> <span class="divider">/</span>
-					</li>					
-					<li class="active">Rendición de cuentas</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span12">								
-				<center>
-				<img src="<?php echo base_url(); ?>img/LogoRemodelacion.gif" >
-				</center>				
-			</div>
-		</div>			
-	</div>
-		
+<section class="title">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span6">
+          <h1>Rendición de cuentas</h1>
+        </div>
+        <div class="span6">
+          <ul class="breadcrumb pull-right">
+            <li><a href="<?php echo site_url('ctoc') ?>">Principal</a> <span class="divider">/</span></li>					
+			<li class="active">Rendición de cuentas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / .title -->       
+
+  <!-- Career -->
+  <section id="career" class="container">
+    <div class="center">
+      <img src="<?php echo base_url(); ?>img/LogoRemodelacion.gif" >
+    </div>
+    
+</section>
+<!-- /Career -->		           			            			           			            			          

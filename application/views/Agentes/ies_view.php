@@ -1,21 +1,26 @@
-			           			            			           			            			          
-	<div class="grid fluid">	
-	<div class="row">
-			<div class="span12">
-				<ul class="breadcrumb">
-					<li>
-						<a href="<?php echo site_url('ctoc') ?>">Principal</a> <span class="divider">/</span>
-					</li>					
-					<li class="active">IES</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span12">
-				<h3>IES</h3>
-				<p>La preparación que brinda la educación superior es de tipo profesional o académica. Se distingue entre estudios de pregrado, grado (carrera universitaria) y posgrado (Especialidad, maestría y Doctorado) según el sistema de titulación profesional y grados académicos. Los establecimientos de educación superior han sido tradicionalmente las universidades, pero además se consideran otros centros educacionales como institutos, escuelas profesionales o escuelas técnicas, centros de formación del profesorado, escuelas o institutos politécnicos, etc.Las instituciones de educación superior pueden ser públicas ó privadas.</p>
-			</div>
-		</div>	
+<section class="title">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span6">
+          <h1>IES</h1>
+        </div>
+        <div class="span6">
+          <ul class="breadcrumb pull-right">
+            <li><a href="<?php echo site_url('ctoc') ?>">Principal</a> <span class="divider">/</span></li>            
+            <li class="active">IES</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / .title -->       
+
+  <!-- Career -->
+  <section id="career" class="container">         
+      <p>La preparación que brinda la educación superior es de tipo profesional o académica. Se distingue entre estudios de pregrado, grado (carrera universitaria) y posgrado (Especialidad, maestría y Doctorado) según el sistema de titulación profesional y grados académicos. Los establecimientos de educación superior han sido tradicionalmente las universidades, pero además se consideran otros centros educacionales como institutos, escuelas profesionales o escuelas técnicas, centros de formación del profesorado, escuelas o institutos politécnicos, etc.Las instituciones de educación superior pueden ser públicas ó privadas.</p>
+    <hr>    
+
+    <div class="row-fluid">
 		<div class="tabbable tabs-left">
 			<ul class="nav nav-tabs">
 				<li class="active"><a href="#1" data-toggle="tab">Públicas</a></li>
@@ -233,4 +238,12 @@
 				</div>
 			</div>
 		</div>
-	</div>		
+      
+
+     
+
+ </div>
+ <p>&nbsp;</p>
+
+</section>
+<!-- /Career -->

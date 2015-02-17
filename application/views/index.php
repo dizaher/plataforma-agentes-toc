@@ -16,11 +16,7 @@
     <script src="<?php echo base_url(); ?>js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>img/iconTOC.png">
-
-    <!-- Iconos 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">-->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>img/iconTOC.png">   
     
 </head>
 
@@ -70,8 +66,7 @@
                                         <li><a href="<?php echo site_url('ctoc/nivelesgobierno') ?>">Niveles de Gobierno</a></li>
                                         <li><a href="<?php echo site_url('ctoc/poderesgobierno') ?>">Poderes de Gobierno</a></li>
                                         <li><a href="<?php echo site_url('ctoc/finan') ?>">Financieras, Incubadoras y Aceleradoras</a></li>
-                                        <li><a href="<?php echo site_url('ctoc/orgciviles') ?>">Organizaciones Civiles</a></li>
-                                        <li><a href="<?php echo site_url('ctoc/sociedad') ?>">Sociedad en General</a></li>
+                                        <li><a href="<?php echo site_url('ctoc/orgciviles') ?>">Organizaciones Civiles</a></li>                                        
                                     </ul>
                                 </li>
                             </ul>
