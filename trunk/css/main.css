@@ -15,7 +15,7 @@ body h3,body h4{margin-top:0}
 .btn.btn-link{color:#2dcc70;padding:0}
 .btn.btn-link:hover{text-decoration:none}
 .btn-primary{background-color:#3498DB}
-.btn-primary:hover{background-color:#24a259}
+.btn-primary:hover{background-color:#808080}
 a{color:#3498DB;-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms}
 a:hover,a:focus{color:#005580;text-decoration:none;outline:0}
 .dropdown-menu{margin-top:-1px;min-width:180px}
@@ -125,7 +125,7 @@ ul.social>li>a:hover{color:#999}
 .blog .blog-item .tag{margin-top:5px}
 .blog .blog-item .avatar{margin-top:5px}
 select,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],.uneditable-input{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;min-height:50px;padding:0 15px;border:3px solid #ededed}
-select:focus,textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="time"]:focus,input[type="week"]:focus,input[type="number"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="color"]:focus,.uneditable-input:focus{border-color:#2dcc70;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
+select:focus,textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="time"]:focus,input[type="week"]:focus,input[type="number"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="color"]:focus,.uneditable-input:focus{border-color:#3498DB;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
 .input-block-level{min-height:50px}
 textarea#message{padding:10px 15px;height:219px}
 .widget{margin-bottom:30px}
