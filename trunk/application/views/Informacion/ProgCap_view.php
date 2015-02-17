@@ -1,18 +1,22 @@
-<div class="grid fluid">
-     <div class="row">
-          <div class="span12">
-               <ul class="breadcrumb">
-                    <li>
-                         <a href="<?php echo site_url('ctoc') ?>">Principal</a> <span class="divider">/</span>
+<section class="title">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                    <h1>Cursos</h1>
+                </div>
+                <div class="span6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="<?php echo site_url('ctoc') ?>">Principal</a> <span class="divider">/</span>
                     </li>                         
                     <li class="active">Programas de Capacitación</li>
-               </ul>
-          </div>
-     </div>
-     <div class="row">
-          <div class="span12">
-               <h3>Cursos</h3>
-               <div class="tabbable tabs-left">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / .title -->  
+<section id="privacy-policy" class="container">
+       <div class="tabbable tabs-left">
                     <ul class="nav nav-tabs">               
                          <li class="active"><a href="#1" data-toggle="tab">Técnico instalador de calentadores solares</a></li>
                          <li><a href="#2" data-toggle="tab">Técnico en desinstalación y manejo de productos de línea verde</a></li>
@@ -152,7 +156,8 @@
                     </div>
                </div>
           </div>
-     </div>         
-     
-</div>         		           			            			           			            			          
-	
+     </div>
+
+
+    </section>
+    <!-- /privacy-policy -->
