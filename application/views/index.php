@@ -32,6 +32,7 @@
                     <span class="icon-bar"></span>
                 </a>
                 <a id="logo" class="pull-left" href="<?php echo site_url('ctoc') ?>"></a>
+                <h3 id="encabezado">TOC Technology Outsourcing Center <br>ECOSISTEMA</h4>
                 <div class="nav-collapse collapse pull-right">
                     <ul class="nav">                                                                                                          
                         <li class="dropdown">
@@ -110,10 +111,17 @@
                                 </li>
                             </ul>
                         </li>                        
-                        <li><a href="<?php echo site_url('ctoc/interes') ?>">Sitios de interés</a></li>              
-                        <li class="login">
-                            <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
-                        </li>
+                        <li><a href="<?php echo site_url('ctoc/interes') ?>">Sitios de interés</a></li>   
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="login">
+                                    <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
+                                </li> 
+                                <li><a href="<?php echo site_url('ctoc/registro') ?>"><i class="icon-user"></i></a></li>
+                            </ul>
+                        </li>           
+                        
                     </ul>        
                 </div><!--/.nav-collapse -->
             </div>
@@ -206,7 +214,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="span5 cp">
-                &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                &copy; 2013 ShapeBootstrap. All Rights Reserved.
             </div>
             <!--/Copyright
 
@@ -233,16 +241,22 @@
 <div class="modal hide fade in" id="loginForm" aria-hidden="false">
     <div class="modal-header">
         <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
-        <h4>Login Form</h4>
+        <h4>Formulario de Ingreso</h4>
     </div>
     <!--Modal Body-->
     <div class="modal-body">
-        <form class="form-inline" action="index.html" method="post" id="form-login">
-            <input type="text" class="input-small" placeholder="Email">
-            <input type="password" class="input-small" placeholder="Password">            
-            <button type="submit" class="btn btn-primary">Sign in</button>
+        <?php echo form_open('cingreso', 'class="form-inline"', 'id="form-login"'); ?>
+            
+            <input type="text" class="input-small" name="correo" value="<?php echo set_value('correo'); ?>" placeholder="Email">
+            <input type="password" class="input-small" placeholder="Password" name="clave">
+
+            <?php if(validation_errors()):?>
+            <button type="button" class="btn btn-warning"><?php echo validation_errors(); ?></button>
+            <?php endif;?>         
+            
+            <button type="submit" class="btn btn-primary">Ingresar</button>
         </form>
-        <a href="#">Forgot your password?</a>
+        <!--<a href="#">Forgot your password?</a>-->
     </div>
     <!--/Modal Body-->
 </div>

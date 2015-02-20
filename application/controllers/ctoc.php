@@ -12,8 +12,15 @@ class Ctoc extends CI_Controller {
 
 	 public function index()
 	 {
-	  $data['contenido']='noticias_view';
-	  $this->load->view('index',$data); 
+	 	$data['contenido']='noticias_view';
+	 	if($this->session->userdata('usuario'))//si hay sesion iniciada 
+	   {	                           
+         $this->load->view('session_view',$data);   	     
+	   }
+	   else//si no hay sesion iniciada
+	   {	    
+	  	$this->load->view('index',$data);     
+	   }	  	 
 	 }
 	 /////////////////////////////////////////////////////////////////////////////////////
 	 //////////////////////FUNCIONALIDADES ///////////////////////////////////////////

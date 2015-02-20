@@ -1,11 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Plataforma Tecnologica TOC</title>
-</head>
-<body>
-  
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Cingreso extends CI_Controller {
@@ -22,13 +14,13 @@ class Cingreso extends CI_Controller {
    //El método tiene la validación de credenciales o usuarios
    $this->load->library('form_validation');
 
-   $this->form_validation->set_rules('correo', 'Nombre de usuario','trim|required|xss_clean');
-   $this->form_validation->set_rules('clave', 'Contraseña', 'trim|required|xss_clean|callback_busca_usuario');
+   $this->form_validation->set_rules('correo', 'E-mail','trim|required|xss_clean');
+   $this->form_validation->set_rules('clave', 'Password', 'trim|required|xss_clean|callback_busca_usuario');
 
    if($this->form_validation->run() == FALSE)
    {
      //Validación de campo fallado. Usuario redirigido a la página iniciar sesión
-        $data['contenido']='ingreso_view';
+        $data['contenido']='noticias_view';
         $this->load->view('index',$data);
    }
    else
@@ -70,5 +62,3 @@ class Cingreso extends CI_Controller {
  }
 }
 ?>
-</body>
-</html>

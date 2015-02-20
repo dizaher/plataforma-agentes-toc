@@ -1,11 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Plataforma Tecnologica TOC</title>
-</head>
-<body>
-  
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Cregistro extends CI_Controller {
@@ -25,6 +17,7 @@ class Cregistro extends CI_Controller {
     $this->form_validation->set_rules('nom','Nombre','required|trim|xss_clean');        
     $this->form_validation->set_rules('ape','Apellidos','required|trim|xss_clean');
     $this->form_validation->set_rules('correo','Correo','required|valid_email|trim|xss_clean|callback_check_database');
+    $this->form_validation->set_rules('telefono','Teléfono','trim|xss_clean|numeric');
     $this->form_validation->set_rules('contra','Contraseña','required|trim|xss_clean|min_length[5]');
     $this->form_validation->set_rules('contra2','Repetir contraseña','required|trim|xss_clean|min_length[5]|matches[contra]');                
     
@@ -40,9 +33,12 @@ class Cregistro extends CI_Controller {
         $nombre = $this->input->post('nom');
         $apellido = $this->input->post('ape');
         $correo_e = $this->input->post('correo');
+        $tel = $this->input->post('telefono');
+        $tipo = $this->input->post('agente');
+        $des = $this->input->post('descripcion');
         $p = $this->input->post('contra');         
                 //ENVÍAMOS LOS DATOS AL MODELO CON LA SIGUIENTE LÍNEA
-        $result = $this->muser->new_user($nombre,$apellido,$correo_e,$p);//SE GUARDA EL USUARIO EN LA BASE DE DATOS 
+        $result = $this->muser->new_user($nombre,$apellido,$correo_e,$p,$tel,$tipo,$des);//SE GUARDA EL USUARIO EN LA BASE DE DATOS 
 
         //***********************************************
         $config = Array(
@@ -52,24 +48,17 @@ class Cregistro extends CI_Controller {
         'smtp_user' => 'dzacarias@tocveracruz.com.mx', // change it to yours
         'smtp_pass' => 'wWeQ]T5B}(bo', // change it to yours
         'mailtype' => 'html',
-        'charset' => 'iso-8859-1',
+        'charset' => 'utf-8',
         'wordwrap' => TRUE
       );
               
             $this->load->library('email', $config);
             $this->email->set_newline("\r\n");
-            $this->email->from('dzacarias@tocveracruz.com.mx'); // change it to yours
+            $this->email->from('dzacarias@tocveracruz.com.mx', 'Diana Zacarías'); // change it to yours
             $this->email->to($correo_e);// change it to yours
-            $this->email->subject('Registro correcto');
-            $this->email->message('Gracias por registrarte');
-            if($this->email->send())
-           {
-            echo 'Email sent.';
-           }
-           else
-          {
-           show_error($this->email->print_debugger());
-          }
+            $this->email->subject('Bienvenido al Ecosistema de Innovación');
+            $this->email->message('Gracias por registrarte'); 
+            $this->email->send();
         //**********************************************
         if ($result) {
           $this->session->set_userdata('usuario', $nombre);               
@@ -104,10 +93,7 @@ class Cregistro extends CI_Controller {
  function logout()
  {     
     $this->session->sess_destroy();
-    $data['contenido']='noticias_view';
-    $this->load->view('index',$data);
+    redirect('ctoc');
  }
 }
 ?>
-</body>
-</html>
