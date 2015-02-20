@@ -34,7 +34,7 @@ class Ctocadmin extends CI_Controller {
 	    $crud = new grocery_CRUD();
 
 	    /* Seleccionamos el tema */
-	    $crud->set_theme('datatables');
+	    $crud->set_theme('twitter-bootstrap');
 
 	    /* Seleccionmos el nombre de la tabla de nuestra base de datos*/
 	    $crud->set_table('at_noticias');

@@ -8,13 +8,16 @@ class Muser extends CI_Model
 	
 	//realizamos la inserción de los datos y devolvemos el 
 	//resultado al controlador para envíar el correo si todo ha ido bien
-	function new_user($nombre,$apellido,$correo_e,$p)
+	function new_user($nombre,$apellido,$correo_e,$p,$tel,$tipo,$des)
 	{
        $data = array(
             'atu_nombre' => $nombre,
             'atu_apellidos' => $apellido,
             'atu_correo' => $correo_e,
-            'atu_clave' => md5($p)
+            'atu_clave' => md5($p),
+            'atu_telefono' => $tel,
+            'atu_tipo' => $tipo,
+            'atu_descripcion' => $des
         );
        	return $this->db->insert('at_users', $data);	
     }

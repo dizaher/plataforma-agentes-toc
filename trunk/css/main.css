@@ -51,7 +51,7 @@ ul.tag-cloud li{display:inline-block;margin:0 0 2px 0}
 .btn-social.btn-google-plus:hover{background:#e36957}
 .btn-social:hover{color:#fff}
 header.navbar .navbar-inner{background:#fff!important;border:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
-header #logo{padding:5px;width:328px;height:80px;background:url('../img/TOC-logo.png') no-repeat 0 50%}
+header #logo{padding:5px;width:80px;height:80px;background:url('../img/TOC-logo.png') no-repeat 0 50%}
 header.navbar{margin-bottom:0}
 header.navbar .nav{margin-top:20px}
 header.navbar .nav>li{margin-left:1px}
@@ -165,3 +165,9 @@ ul.faq li span.number{display:block;float:left;width:50px;height:50px;line-heigh
 ul.faq li>div{margin-left:70px}
 ul.faq li>div h3{margin-top:0}
 #error{text-align:center;margin-top:150px;margin-bottom:150px}
+#encabezado{
+	float: left;
+	font-family: 'Century Gothic', sans-serif;
+	line-height: 25px;
+	margin-top: 10px;
+}
