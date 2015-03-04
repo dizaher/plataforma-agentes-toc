@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                 </a>
                 <a id="logo" class="pull-left" href="<?php echo site_url('ctoc') ?>"></a>
-                <h3 id="encabezado">TOC Technology Outsourcing Center <br>ECOSISTEMA</h4>
+                <h3 id="encabezado">Ecosistema de Innovación</h3>
                 <div class="nav-collapse collapse pull-right">
                     <ul class="nav">                                                                                                          
                         <li class="dropdown">

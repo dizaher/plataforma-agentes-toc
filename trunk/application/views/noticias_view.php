@@ -113,7 +113,7 @@
                     <div class="pull-right">
                         <a class="prev" href="#myCarousel" data-slide="prev"><i class="icon-angle-left icon-large"></i></a> <a class="next" href="#myCarousel" data-slide="next"><i class="icon-angle-right icon-large"></i></a>
                     </div>
-                    <img src="<?php echo base_url(); ?>img/cie/cie.jpg">
+                    <img src="<?php echo base_url(); ?>img/CIE/cie.jpg">
                 </div>                
             </div>
             <div class="span10">
@@ -123,9 +123,9 @@
                     <div class="active item">
                         <div class="row-fluid">
                             <ul class="thumbnails">
-                                <li class="span4"><a href="#"><img src="<?php echo base_url(); ?>img/cie/reintech.jpg"></a></li>
-                                <li class="span4"><a href="#"><img src="<?php echo base_url(); ?>img/cie/ayuda.jpg"></a></li>
-                                <li class="span4"><a href="#"><img src="<?php echo base_url(); ?>img/cie/amanecer.jpg"></a></li>                                
+                                <li class="span4"><a href="#"><img src="<?php echo base_url(); ?>img/CIE/reintech.jpg"></a></li>
+                                <li class="span4"><a href="#"><img src="<?php echo base_url(); ?>img/CIE/ayuda.jpg"></a></li>
+                                <li class="span4"><a href="#"><img src="<?php echo base_url(); ?>img/CIE/amanecer.jpg"></a></li>                                
                             </ul>
                         </div>
                     </div>
@@ -133,8 +133,8 @@
                     <div class="item">
                         <div class="row-fluid">
                             <ul class="thumbnails">
-                                <li class="span3"><a href="#"><img src="<?php echo base_url(); ?>img/cie/greenit.jpg"></a></li>
-                                <li class="span5"><a href="#"><img src="<?php echo base_url(); ?>img/cie/estecs.jpg"></a></li>
+                                <li class="span3"><a href="#"><img src="<?php echo base_url(); ?>img/CIE/greenit.jpg"></a></li>
+                                <li class="span5"><a href="#"><img src="<?php echo base_url(); ?>img/CIE/estecs.jpg"></a></li>
                                                                
                             </ul>
                         </div>

@@ -57,7 +57,15 @@ class Cregistro extends CI_Controller {
             $this->email->from('dzacarias@tocveracruz.com.mx', 'Diana Zacarías'); // change it to yours
             $this->email->to($correo_e);// change it to yours
             $this->email->subject('Bienvenido al Ecosistema de Innovación');
-            $this->email->message('Gracias por registrarte'); 
+            $this->email->message('<h3>Bienvenido a nuestro Ecosistema de Innovación.</h3>
+                                  <hr>
+                                  <p>Gracias por registrarte como nuevo usuario; de ahora en adelante tendrás acceso a más funcionalidades de nuestra plataforma.</p>
+                                  <p>Tu cuenta de acceso y la contraseña que nos proporcionaste constituyen una identificación única. Por favor, conserva este correo para posterior consulta:</p>
+                                  <p><strong>Usuario: ' . $correo_e . '</strong></p>
+                                  <p><strong>Contraseña: ' . $p . ' </strong></p>
+                                  <p>La información que nos proporcionaste durante tu registro nos permitirá fortalecer la red de Agentes del Ecosistema de Innovación de la que ahora también formas parte.</p>
+                                  <h4> ¿Quieres saber más sobre esta red? </h4>
+                                  <h3>¡Contáctanos!</h3>'); 
             $this->email->send();
         //**********************************************
         if ($result) {
