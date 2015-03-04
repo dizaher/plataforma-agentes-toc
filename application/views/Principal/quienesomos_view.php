@@ -23,7 +23,7 @@
             </div>
             <div class="span6">
                 <h2>Visión</h2>
-                <p>Somos una empresa con altos estándares de calidad, con productos y servicios integrados a las necesidades de la sociedad moderna, tomando al hombre como parte de la naturaleza, alcanzando a la sociedad mexicana y mundial.</p>
+                <p>Somos una empresa con altos estándares de calidad, con productos y servicios integrados a las necesidades de la sociedad moderna, tomando al hombre como parte de la naturaleza.</p>
             </div>
         </div>
 
@@ -37,7 +37,7 @@
 				<p>Los valores de nuestra cultura corporativa son:</p>
 				<ul>
 					<li>Cultura eco-tecnológica.</li>
-					<li>Respeto y ayuda al próximo</li>
+					<li>Respeto y ayuda al prójimo</li>
 					<li>Visión integral de las tecnologías, la sociedad y le ecología.</li>
 					<li>Responsabilidad social.</li>
 					<li>Integridad.</li>

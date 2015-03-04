@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                 </a>
                 <a id="logo" class="pull-left" href="<?php echo site_url('ctoc') ?>"></a>
-                <h3 id="encabezado">TOC Technology Outsourcing Center <br>ECOSISTEMA</h4>
+                <h3 id="encabezado">Ecosistema de Innovación</h3>
                 <div class="nav-collapse collapse pull-right">
                     <ul class="nav">                                                                                                          
                         <li class="dropdown">
@@ -116,9 +116,9 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="login">
-                                    <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
+                                    <a data-toggle="modal" href="#loginForm"><i class="icon-signin"></i> Ingresar</a>
                                 </li> 
-                                <li><a href="<?php echo site_url('ctoc/registro') ?>"><i class="icon-user"></i></a></li>
+                                <li><a href="<?php echo site_url('ctoc/registro') ?>"><i class="icon-user"></i> Registrar</a></li>
                             </ul>
                         </li>           
                         

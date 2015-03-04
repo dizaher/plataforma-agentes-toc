@@ -13,7 +13,7 @@ class Cingresoadmin extends CI_Controller {
  function __construct()
  {
    parent::__construct();
-   $this->load->model('muser','',TRUE);
+   $this->load->model('museradmin','',TRUE);
    $this->load->library("encrypt");
  }
 
@@ -22,18 +22,17 @@ class Cingresoadmin extends CI_Controller {
    //El método tiene la validación de credenciales o usuarios
    $this->load->library('form_validation');
 
-   $this->form_validation->set_rules('correo', 'Nombre de usuario','trim|required|xss_clean');
-   $this->form_validation->set_rules('clave', 'Contraseña', 'trim|required|xss_clean|callback_busca_usuario');
+   $this->form_validation->set_rules('user', 'Usuario','trim|required|xss_clean');
+   $this->form_validation->set_rules('pass', 'Password', 'trim|required|xss_clean|callback_busca_usuario');
 
    if($this->form_validation->run() == FALSE)
    {
-     //Validación de campo fallado. Usuario redirigido a la página iniciar sesión
-        $data['contenido']='ingreso_view';
-        $this->load->view('index',$data);
+     //Validación de campo fallado. Usuario redirigido a la página iniciar sesión        
+        $this->load->view('index');
    }
    else
    {                           
-    redirect('ctocadmin/administracion');  
+      $this->load->view('catalogos_view');
    }
 
  }
@@ -42,7 +41,7 @@ class Cingresoadmin extends CI_Controller {
  {
    //Validación de campo tuvo éxito. Validar contra la base de datos
    $usuario = $this->input->post('correo');        
-
+   $cla = md5($clave);
    //consultar la base de datos
    $result = $this->muser->busca_user($usuario);
 
@@ -51,7 +50,8 @@ class Cingresoadmin extends CI_Controller {
       foreach($result as $row)
       {    
                
-        if ($this->encrypt->decode($row->atu_clave) == $clave) {          
+        if ($cla == $row->atu_clave) { 
+          $this->session->set_userdata('usuario', $row->atu_nombre);         
           return TRUE;  
         }
         else{
