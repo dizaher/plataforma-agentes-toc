@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/main.css">        
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/main.css">   
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/sl-slide.css">     
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="<?php echo base_url(); ?>img/iconTOC.png">  
@@ -42,7 +43,7 @@
     <div class="container">
       <div class="row-fluid">
         <div class="span6">
-          <h1>Administración de Noticias</h1>
+          <h1>Administración de Catálogos</h1>
         </div>
         <div class="span6">
           
@@ -52,9 +53,58 @@
   </section>
   <!-- / .title -->
 
-  <section id="career" class="container">
-    Selecciona el catalogo a configurar
-  </section>
+  <section id="pricing-table" class="container">       
+        <div class="row-fluid center clearfix">
+            <div class="span4">
+                <ul class="plan plan1">
+                    <li class="plan-name">
+                        <h3>Administración de noticias</h3>
+                    </li>
+                    <li class="plan-price">
+                        Altas
+                    </li>
+                    <li>
+                        Bajas
+                    </li>
+                    <li>
+                        Cambios
+                    </li>                    
+                    <li class="plan-action">
+                        <a href="<?php echo site_url('ctocadmin/administracion_noticias') ?>" class="btn btn-transparent">Administrar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="span4">
+                <ul class="plan plan1">
+                    <li class="plan-name">
+                        <h3>Administración de Usuarios</h3>
+                    </li>
+                    <li class="plan-price">
+                        Altas
+                    </li>
+                    <li>
+                        Bajas
+                    </li>
+                    <li>
+                        Cambios
+                    </li>
+                    <li class="plan-action">
+                        <a href="<?php echo site_url('ctocadmin/administracion_usuarios') ?>" class="btn btn-transparent">Administrar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="span3">
+               
+            </div>
+
+            <div class="span3">
+                
+            </div>
+        </div>
+        <p>&nbsp;</p>
+    </section>
                                                                           
 </body>
 </html>

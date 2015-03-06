@@ -28,30 +28,30 @@ class Cingresoadmin extends CI_Controller {
    if($this->form_validation->run() == FALSE)
    {
      //Validación de campo fallado. Usuario redirigido a la página iniciar sesión        
-        $this->load->view('index');
+        $this->load->view('Admin/index');
    }
    else
    {                           
-      $this->load->view('catalogos_view');
+      $this->load->view('Admin/catalogos_view');
    }
 
  }
 
- function busca_usuario($clave)
+ function busca_usuario($pass)
  {
    //Validación de campo tuvo éxito. Validar contra la base de datos
-   $usuario = $this->input->post('correo');        
-   $cla = md5($clave);
+   $usuario = $this->input->post('user');        
+   $cla = $pass;
    //consultar la base de datos
-   $result = $this->muser->busca_user($usuario);
+   $result = $this->museradmin->busca_user($usuario);
 
    if($result)
    {      
       foreach($result as $row)
       {    
                
-        if ($cla == $row->atu_clave) { 
-          $this->session->set_userdata('usuario', $row->atu_nombre);         
+        if ($cla == $row->atu_password) { 
+          $this->session->set_userdata('usuario', $row->atu_user);         
           return TRUE;  
         }
         else{
@@ -65,6 +65,12 @@ class Cingresoadmin extends CI_Controller {
       $this->form_validation->set_message('busca_usuario', 'El usuario no se encuentra en la base de datos');
           return false;
     }   
+ }
+
+ function logout()
+ {     
+    $this->session->sess_destroy();
+    redirect('ctocadmin');
  }
 }
 ?>

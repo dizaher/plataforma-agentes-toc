@@ -26,7 +26,65 @@ class Ctocadmin extends CI_Controller {
 	 //////////////////////FUNCIONALIDADES ///////////////////////////////////////////
 	 /////////////////////////////////////////////////////////////////////////////////////
 
-	 function administracion()
+	 function administracion_noticias()
+	  {
+	    try{
+
+	    /* Creamos el objeto */
+	    $crud = new grocery_CRUD();
+
+	    /* Seleccionamos el tema */
+	    $crud->set_theme('twitter-bootstrap');
+
+	    /* Seleccionmos el nombre de la tabla de nuestra base de datos*/
+	    $crud->set_table('at_noticias');
+
+	    /* Le asignamos un nombre */
+	    $crud->set_subject('Noticias');
+
+	    /* Asignamos el idioma español */
+	    $crud->set_language('spanish');
+	    $crud->display_as('atu_nombre','Titulo de la noticia');
+	    $crud->display_as('atu_descripcion','Redacción de la noticia');
+	    $crud->display_as('atu_imagen','Insertar imagen');
+	    $crud->display_as('atu_fecha','Fecha');	   
+	    $crud->field_type('atu_tipo','dropdown', array('1' => 'Principal', '2' => 'Secundaria'));	   
+	    /* Asignamos el directorio de la subida de imagenes */
+	    $crud->set_field_upload('atu_imagen','img/Noticias');
+	    
+	    /* Aqui le decimos a grocery que estos campos son obligatorios */
+	    $crud->required_fields(
+	      'atu_idnotice',
+	      'atu_nombre',
+	      'atu_descripcion',
+	      'atu_imagen'      ,
+	      'atu_fecha',
+	      'atu_tipo'
+	    );
+
+	    /* Aqui le indicamos que campos deseamos mostrar */
+	    $crud->columns(
+	      'atu_nombre',
+	      'atu_descripcion',
+	      'atu_imagen'      ,
+	      'atu_fecha',
+	      'atu_tipo'
+	    );
+
+	    /* Generamos la tabla */
+	    $output = $crud->render();
+
+	    /* La cargamos en la vista situada en
+	    /applications/views/productos/administracion.php */
+	    $this->load->view('Admin/noticiasadmin_view', $output);
+
+	    }catch(Exception $e){
+	      /* Si algo sale mal cachamos el error y lo mostramos */
+	      show_error($e->getMessage().' --- '.$e->getTraceAsString());
+	    }
+	  }
+
+	  function administracion_usuarios()
 	  {
 	    try{
 

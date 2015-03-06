@@ -38,7 +38,7 @@ class Museradmin extends CI_Model
      {
        $this -> db -> select('atu_user, atu_password');
        $this -> db -> from('at_usersadmin');
-       $this -> db -> where('atu_user', $usuario);          
+       $this -> db -> where('atu_user', $usuario);                 
 
        $query = $this -> db -> get();
 
