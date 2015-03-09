@@ -47,9 +47,14 @@ class Ctocadmin extends CI_Controller {
 	    $crud->display_as('atu_nombre','Titulo de la noticia');
 	    $crud->display_as('atu_descripcion','Redacción de la noticia');
 	    $crud->display_as('atu_imagen','Insertar imagen');
-	    $crud->display_as('atu_fecha','Fecha');	   
-	    $crud->field_type('atu_tipo','dropdown', array('1' => 'Principal', '2' => 'Secundaria'));	   
-	    /* Asignamos el directorio de la subida de imagenes */
+	    $crud->display_as('atu_fecha','Fecha');	 
+	    $crud->display_as('atu_tipo','Prioridad de la noticia');
+
+	    $values = array("Principal", "Secundaria");
+		$crud->field_type("atu_tipo", 'dropdown', $values);  
+
+	    /*$crud->field_type('atu_tipo','dropdown', array(1 => 'Principal', 2 => 'Secundaria'));	   
+	     Asignamos el directorio de la subida de imagenes */
 	    $crud->set_field_upload('atu_imagen','img/Noticias');
 	    
 	    /* Aqui le decimos a grocery que estos campos son obligatorios */

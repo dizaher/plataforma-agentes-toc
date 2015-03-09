@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/main.css">        
 
     <!-- Le fav and touch icons -->
