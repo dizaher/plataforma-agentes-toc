@@ -1,11 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Plataforma Tecnologica TOC</title>
-</head>
-<body>
-  
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Cingresoadmin extends CI_Controller {
@@ -31,11 +23,17 @@ class Cingresoadmin extends CI_Controller {
         $this->load->view('Admin/index');
    }
    else
-   {                           
-      $this->load->view('Admin/catalogos_view');
-   }
+   {  
 
+      $this->_example_output((object)array('output' => '' , 'js_files' => array() , 'css_files' => array()));
+   }
  }
+
+ public function _example_output($output = null)
+  {
+    $this->load->view('Admin/catalogos_view.php',$output);
+  }
+
 
  function busca_usuario($pass)
  {
@@ -74,5 +72,3 @@ class Cingresoadmin extends CI_Controller {
  }
 }
 ?>
-</body>
-</html>
