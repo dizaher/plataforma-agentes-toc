@@ -64,7 +64,9 @@ h2{
     padding: 10px;
 }
 .container{
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
 }
 </style>
 </head>
