@@ -100,7 +100,7 @@ class Ctocadmin extends CI_Controller {
 	public function admin_usuarios()
 	{
 			$crud = new grocery_CRUD();
-
+			
 			$crud->set_table('at_usersadmin');
 			$crud->columns('atu_user','atu_password');			
 			$crud->display_as('atu_user','Nombre de Usuario');
