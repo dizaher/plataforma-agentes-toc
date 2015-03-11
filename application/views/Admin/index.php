@@ -31,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a id="logo" class="pull-left" href="<?php echo site_url('ctocadmin') ?>"></a>
+                <a id="logo" class="pull-left" href="<?php echo site_url('cingresoadmin') ?>"></a>
                 <h3 id="encabezado">Ecosistema de Innovación</h3>
             </div>
         </div>
@@ -50,7 +50,7 @@
   </section>
   <!-- / .title -->
   <section id="registration-page" class="container">
-    <?php echo form_open('cingresoadmin', 'class="center"'); ?>    
+    <?php echo form_open('ctocadmin', 'class="center"'); ?>    
       <h2>Iniciar Sesión</h2>
       <i class="icon-user icon-medium"></i>
         <input type="text" class="input-large" name="user" value="<?php echo set_value('user'); ?>" placeholder="Usuario">

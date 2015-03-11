@@ -1,110 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Plataforma Tecnologica TOC</title>
-    <meta name="description" content="TOC Technology Outsourcing Center">
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/main.css">   
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/sl-slide.css">     
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>img/iconTOC.png">  
+    <title>Plataforma Tecnologica TOC</title>
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>img/iconTOC.png">
+<?php 
+foreach($css_files as $file): ?>
+    <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+<?php endforeach; ?>
+<?php foreach($js_files as $file): ?>
+    <script src="<?php echo $file; ?>"></script>
+<?php endforeach; ?>
+<style type='text/css'>
+body
+{
+    font-family: Arial;
+    font-size: 14px;
+}
+a {  
+    color: #fff;  
+    text-decoration: none;
+    font-size: 18px;
+}
+a:hover
+{
+    color: #808080;
+}
+.sesion{
+    padding: 10px;
+    float: right;
+    color: #000;
+}
+.imagen{
+    float: left;
+}
+.contenedor{
+    margin: 50px;
+    padding: 10px;
+    background-color: #3498d8;
+    clear: both;
+}
+.cont2{
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.menu{
+    display: inline;
+}
+li{
+    list-style: none;
+    padding: 15px;
+    border-radius: 3px;
+  color: #fff;
+  line-height: 24px;
+  display: inline-block;
+  background-color: #003f7e;
+}
+h2{
+    float: left;
+    padding: 10px;
+}
+.container{
+    margin: 50px;
+}
+</style>
 </head>
-<body class="metro">
-  <!--Header-->
-    <header class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a id="logo" class="pull-left" href="<?php echo site_url('ctoc') ?>"></a>
-                <h3 id="encabezado">Ecosistema de Innovación</h3>
-                <div class="nav-collapse collapse pull-right">
-                    <ul class="nav">                                                                                                          
-                         
-                        <li>Bienvenid@ <?=$this->session->userdata('usuario'); ?>!</li>                                                                                                    
-                        <li><a href="<?php echo site_url('cingresoadmin/logout') ?>">Cerrar Sesión</a></li>                                
-                            
-                    </ul>        
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
-    </header>   
-    <section class="title">
-    <div class="container">
-      <div class="row-fluid">
-        <div class="span6">
-          <h1>Administración de Catálogos</h1>
-        </div>
-        <div class="span6">
-          
-        </div>
-      </div>
+<body>
+    <div class="cont2">
+        <img class="imagen" src="<?php echo base_url(); ?>img/Logo_TOC.png" alt="" />
+       <h2>Administración de Catálogos </h2> 
+       <p class="sesion">Bienvenid@ <strong><?=$this->session->userdata('usuario'); ?>!</strong><br><a style="color:#808080; font-size:14px;" href="<?php echo site_url('ctocadmin/logout') ?>">Cerrar Sesión</a></p>       
     </div>
-  </section>
-  <!-- / .title -->
-
-  <section id="pricing-table" class="container">       
-        <div class="row-fluid center clearfix">
-            <div class="span4">
-                <ul class="plan plan1">
-                    <li class="plan-name">
-                        <h3>Administración de noticias</h3>
-                    </li>
-                    <li class="plan-price">
-                        Altas
-                    </li>
-                    <li>
-                        Bajas
-                    </li>
-                    <li>
-                        Cambios
-                    </li>                    
-                    <li class="plan-action">
-                        <a href="<?php echo site_url('ctocadmin/administracion_noticias') ?>" class="btn btn-transparent">Administrar</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="span4">
-                <ul class="plan plan1">
-                    <li class="plan-name">
-                        <h3>Administración de Usuarios</h3>
-                    </li>
-                    <li class="plan-price">
-                        Altas
-                    </li>
-                    <li>
-                        Bajas
-                    </li>
-                    <li>
-                        Cambios
-                    </li>
-                    <li class="plan-action">
-                        <a href="<?php echo site_url('ctocadmin/administracion_usuarios') ?>" class="btn btn-transparent">Administrar</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="span3">
-               
-            </div>
-
-            <div class="span3">
-                
-            </div>
-        </div>
-        <p>&nbsp;</p>
-    </section>
-                                                                          
+    <div class="contenedor">
+        <ul >
+            <li class="menu"><a href='<?php echo site_url('ctocadmin/admin_usuarios')?>'>Usuarios</a></li>
+            <li class="menu"><a href='<?php echo site_url('ctocadmin/admin_noticias')?>'>Noticias</a></li>
+        </ul>
+    </div>    
+    <div class="container">
+        <?php echo $output; ?>
+    </div>    
 </body>
 </html>
