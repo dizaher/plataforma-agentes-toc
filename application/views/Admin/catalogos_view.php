@@ -74,7 +74,7 @@ h2{
     <div class="cont2">
         <img class="imagen" src="<?php echo base_url(); ?>img/Logo_TOC.png" alt="" />
        <h2>Administración de Catálogos </h2> 
-       <p class="sesion">Bienvenid@ <strong><?=$this->session->userdata('usuario'); ?>!</strong><br><a style="color:#808080; font-size:14px;" href="<?php echo site_url('ctocadmin/logout') ?>">Cerrar Sesión</a></p>       
+       <p class="sesion">Bienvenid@ <strong><?=$this->session->userdata('usuarioadmin'); ?>!</strong><br><a style="color:#808080; font-size:14px;" href="<?php echo site_url('ctocadmin/logout') ?>">Cerrar Sesión</a></p>       
     </div>
     <div class="contenedor">
         <ul >

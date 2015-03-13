@@ -49,7 +49,7 @@ class Cingresoadmin extends CI_Controller {
       {    
                
         if ($cla == $row->atu_password) { 
-          $this->session->set_userdata('usuario', $row->atu_user);         
+          $this->session->set_userdata('usuarioadmin', $row->atu_user);                   
           return TRUE;  
         }
         else{

@@ -7,12 +7,16 @@ class Ctoc extends CI_Controller {
 
 	    parent::__construct();
 	    $this->load->helper('url');  
-	    $this->load->helper(array('form'));  
+	    $this->load->helper(array('form'));
+	    $this->load->model('mnoti');
+	    $this->load->library("pagination");
 	  }
 
 	 public function index()
 	 {
 	 	$data['contenido']='noticias_view';
+	 	$data['noti_principales'] = $this->mnoti->get_noticias_prin();
+	 	$data['noti_secundarias'] = $this->mnoti->get_noticias_secu();
 	 	if($this->session->userdata('usuario'))//si hay sesion iniciada 
 	   {	                           
          $this->load->view('session_view',$data);   	     
@@ -36,6 +40,7 @@ class Ctoc extends CI_Controller {
 	  $data['contenido']='ingreso_view';
 	  $this->load->view('index',$data); 
 	 }	
+	 
 	 /////////////////////////////////////////////////////////////////////////////////////
 	 //////////////////////CARPETA PRINCIPAL ///////////////////////////////////////////
 	 /////////////////////////////////////////////////////////////////////////////////////
@@ -56,12 +61,37 @@ class Ctoc extends CI_Controller {
 	 {
 	 	$data['contenido']='Principal/difusion_view';//Nombre de carpeta y nombre de la vista
 	 	if($this->session->userdata('usuario'))//si hay sesion iniciada 
-	   {	                           
-         $this->load->view('session_view',$data);   	     
+	   {	 
+	   		$config = array();
+	        $config["base_url"] = base_url() . "index.php/ctoc/difusion";
+	        $config["total_rows"] = $this->mnoti->getNumDatos_noti();
+	        $config["per_page"] = 5;
+	        $config["uri_segment"] = 3;
+	 
+	        $this->pagination->initialize($config);
+	 
+	        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;	        
+	        $data["results"] = $this->mnoti->get_datos_noticias($config["per_page"], $page);
+	        $data["links"] = $this->pagination->create_links();
+	 
+	        $this->load->view('session_view',$data);   	     
 	   }
 	   else//si no hay sesion iniciada
 	   {		  
-		  $this->load->view('index',$data); 
+		   	$config = array();
+	        $config["base_url"] = base_url() . "index.php/ctoc/difusion";
+	        $config["total_rows"] = $this->mnoti->getNumDatos_noti();
+	        $config["per_page"] = 5;
+	        $config["uri_segment"] = 3;
+	 
+	        $this->pagination->initialize($config);
+	 
+	        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;	        
+	        $data["results"] = $this->mnoti->get_datos_noticias($config["per_page"], $page);
+	        $data["links"] = $this->pagination->create_links();
+	 
+	        $this->load->view('index',$data);
+		   
 		}
 	 }
 

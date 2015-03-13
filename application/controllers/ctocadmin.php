@@ -14,7 +14,7 @@ class Ctocadmin extends CI_Controller {
 
 	function index()
 	 {
-	 	if($this->session->userdata('usuario'))//si hay sesion iniciada 
+	 	if($this->session->userdata('usuarioadmin'))//si hay sesion iniciada 
 	   {
 		   $this->_example_output((object)array('output' => '' , 'js_files' => array() , 'css_files' => array()));
 		}
@@ -75,7 +75,7 @@ class Ctocadmin extends CI_Controller {
 	      {    
 	               
 	        if ($cla == $row->atu_password) { 
-	          $this->session->set_userdata('usuario', $row->atu_user);         
+	          $this->session->set_userdata('usuarioadmin', $row->atu_user);         
 	          return TRUE;  
 	        }
 	        else{
@@ -102,7 +102,11 @@ class Ctocadmin extends CI_Controller {
 			$crud = new grocery_CRUD();
 			
 			$crud->set_table('at_usersadmin');
-			$crud->columns('atu_user','atu_password');			
+			$crud->columns('atu_nombreadmin','atu_apeadmin','atu_correo','atu_user','atu_password');			
+			
+			$crud->display_as('atu_nombreadmin','Nombre');
+			$crud->display_as('atu_apeadmin','Apellidos');
+			$crud->display_as('atu_correo','Correo electrónico');
 			$crud->display_as('atu_user','Nombre de Usuario');
 			$crud->display_as('atu_password','Clave de usuario');
 			$crud->change_field_type('atu_password', 'password');
@@ -110,6 +114,8 @@ class Ctocadmin extends CI_Controller {
 			$crud->callback_before_insert(array($this,'encrypt_password_callback'));
 
 			$crud->set_subject('Usuarios');
+
+			$crud->required_fields('atu_nombreadmin','atu_apeadmin','atu_correo','atu_user','atu_password');
 			
 			$crud->unset_export();
 			$crud->unset_print();
@@ -161,6 +167,9 @@ class Ctocadmin extends CI_Controller {
             );
 
 			$crud->set_subject('Noticias');
+
+			$crud->unset_texteditor('atu_descripcion','full_text');
+			$crud->unset_texteditor('atu_nombre','full_text');
 
 			$crud->unset_export();
 			$crud->unset_print();
