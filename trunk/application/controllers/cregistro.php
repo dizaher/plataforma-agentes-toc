@@ -5,6 +5,7 @@ class Cregistro extends CI_Controller {
  function __construct()
  {
    parent::__construct();
+   $this->load->model('mnoti');
    $this->load->model('muser','',TRUE);
    $this->load->library("encrypt");
  }
@@ -69,7 +70,9 @@ class Cregistro extends CI_Controller {
             $this->email->send();
         //**********************************************
         if ($result) {
-          $this->session->set_userdata('usuario', $nombre);               
+          $this->session->set_userdata('usuario', $nombre);  
+          $data['noti_principales'] = $this->mnoti->get_noticias_prin();
+          $data['noti_secundarias'] = $this->mnoti->get_noticias_secu();             
           $data['contenido']='noticias_view';
           $this->load->view('session_view',$data);
         }
