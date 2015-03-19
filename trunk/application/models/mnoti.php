@@ -31,7 +31,9 @@ class Mnoti extends CI_Model
   public function get_noticias_prin()
   {         
     $query = $this->db->select("atu_nombre, atu_descripcion, atu_imagen");
-    $query = $this->db->where("atu_tipo","Primaria" );     
+    $query = $this->db->where("atu_tipo","Primaria" );  
+    $query = $this->db->limit(2);
+    $query = $this->db->order_by("atu_fecha", "asc");   
     $query = $this->db->get("at_noticias");  
     if($query -> num_rows() > 0){    
       return $query->result();
@@ -46,6 +48,7 @@ class Mnoti extends CI_Model
     $query = $this->db->select("atu_nombre, atu_descripcion");
     $query = $this->db->where("atu_tipo","Secundaria" );     
     $query = $this->db->limit(3);
+    $query = $this->db->order_by("atu_fecha", "asc"); 
     $query = $this->db->get("at_noticias");  
     if($query -> num_rows() > 0){    
       return $query->result();

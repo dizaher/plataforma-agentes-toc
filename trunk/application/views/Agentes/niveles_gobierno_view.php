@@ -36,32 +36,32 @@
 				<h4 id="gf">Estructura de Gobierno Federal</h4>
 				<table class="table table-bordered">					    
 			        <tr>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/TW_AVATAR_SEGOB.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Gobernación <br> <a href="www.gobernacion.gob.mx">www.gobernacion.gob.mx</a></td>  
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SRE.png" width="100px" heigth="100px"><br>Secretaría de Relaciones Exteriores<br> <a href="www.sre.gob.mx">www.sre.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SEDENA.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de la Defensa Nacional<br> <a href="www.sedena.gob.mx">www.sedena.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SEMAR.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Marina<br><a href="www.semar.gob.mx">www.semar.gob.mx</a></td>					        	
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SSP.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Seguridad Pública<br> <a href="www.ssp.gob.mx">www.ssp.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/segoblogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Gobernación <br> <a href="www.gobernacion.gob.mx">www.gobernacion.gob.mx</a></td>  
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/srelogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Relaciones Exteriores<br> <a href="www.sre.gob.mx">www.sre.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/sedenalogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de la Defensa Nacional<br> <a href="www.sedena.gob.mx">www.sedena.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/semarlogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Marina<br><a href="www.semar.gob.mx">www.semar.gob.mx</a></td>					        	
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/ssplogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Seguridad Pública<br> <a href="www.ssp.gob.mx">www.ssp.gob.mx</a></td>
 			        </tr>
 			        <tr>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SHCP.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Hacienda y Crédito Público<br><a href="www.shcp.gob.mx">www.shcp.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SEDESOL.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Desarrollo Social<br><a href="www.sedesol.gob.mx">www.sedesol.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SEMARNAT.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Medio Ambiente y Recursos Naturales<br><a href="www.semarnat.gob.mx">www.semarnat.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SENER.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Energía<br><a href="www.sener.gob.mx">www.sener.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SE.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Economía<br><a href="www.economia.gob.mx">www.economia.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/shcplogo.jpg" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Hacienda y Crédito Público<br><a href="www.shcp.gob.mx">www.shcp.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/sedesollogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Desarrollo Social<br><a href="www.sedesol.gob.mx">www.sedesol.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/semarnatlogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Medio Ambiente y Recursos Naturales<br><a href="www.semarnat.gob.mx">www.semarnat.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/senerlogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Energía<br><a href="www.sener.gob.mx">www.sener.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/selogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Economía<br><a href="www.economia.gob.mx">www.economia.gob.mx</a></td>
 			        </tr>
 			        <tr>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SEP.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Educación Pública<br><a href="www.sep.gob.mx">www.sep.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SAGARPA1.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación<br><a href="www.sagarpa.gob.mx">www.sagarpa.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SCT1.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Comunicaciones y Transportes<br><a href="www.sct.gob.mx">www.sct.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SFP1.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de la Función Pública<br><a href="www.funcionpublica.gob.mx">www.funcionpublica.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SALUD.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Salud<br><a href="www.salud.gob.mx">www.salud.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/seplogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Educación Pública<br><a href="www.sep.gob.mx">www.sep.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/sagarpalogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación<br><a href="www.sagarpa.gob.mx">www.sagarpa.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/sctlogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Comunicaciones y Transportes<br><a href="www.sct.gob.mx">www.sct.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/sfplogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de la Función Pública<br><a href="www.funcionpublica.gob.mx">www.funcionpublica.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/saludlogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Salud<br><a href="www.salud.gob.mx">www.salud.gob.mx</a></td>
 			        </tr>
 			        <tr>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_STPS.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Trabajo y Previsión Social<br><a href="www.stps.gob.mx">www.stps.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SEDATU.jpg" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Desarrollo Agrario, Territorial y Urbano<br><a href="www.sedatu.gob.mx">www.sedatu.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_SECTUR.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Turismo<br><a href="www.sectur.gob.mx">www.sectur.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_CJEF.png" class="img-rounded" width="100px" heigth="100px"><br>Consejería Jurídica del Ejecutivo Federal<br><a href="www.cjef.gob.mx">www.cjef.gob.mx</a></td>
-			        	<td><img src="http://www.presidencia.gob.mx/wp-content/uploads/2012/12/FB_AVATAR_PGR1.png" class="img-rounded" width="100px" heigth="100px"><br>Procuraduría General de la República<br><a href="www.pgr.gob.mx">www.pgr.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/stpslogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Trabajo y Previsión Social<br><a href="www.stps.gob.mx">www.stps.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/sedatulogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Desarrollo Agrario, Territorial y Urbano<br><a href="www.sedatu.gob.mx">www.sedatu.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/secturlogo.png" class="img-rounded" width="100px" heigth="100px"><br>Secretaría de Turismo<br><a href="www.sectur.gob.mx">www.sectur.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/sjetlogo.png" class="img-rounded" width="100px" heigth="100px"><br>Consejería Jurídica del Ejecutivo Federal<br><a href="www.cjef.gob.mx">www.cjef.gob.mx</a></td>
+			        	<td><img src="<?php echo base_url(); ?>img/Imgpaginas/pgrlogo.png" class="img-rounded" width="100px" heigth="100px"><br>Procuraduría General de la República<br><a href="www.pgr.gob.mx">www.pgr.gob.mx</a></td>
 			        </tr>					        					    
 				</table>
 				<h4 id="df">Delegaciones Federales en el Estado de Veracruz</h4>
