@@ -14,7 +14,7 @@ class Muser extends CI_Model
             'atu_nombre' => $nombre,
             'atu_apellidos' => $apellido,
             'atu_correo' => $correo_e,
-            'atu_clave' => md5($p),
+            'atu_clave' => sha1($p),
             'atu_telefono' => $tel,
             'atu_tipo' => $tipo,
             'atu_descripcion' => $des
@@ -37,6 +37,24 @@ class Muser extends CI_Model
      function busca_user($usuario)
      {
        $this -> db -> select('atu_nombre, atu_clave');
+       $this -> db -> from('at_users');
+       $this -> db -> where('atu_correo', $usuario);          
+
+       $query = $this -> db -> get();
+
+       if($query -> num_rows() == 1)
+       {    
+         return $query->result();
+       }
+       else
+       {
+         return false;
+       }
+     }
+
+     function busca_usuario($usuario)
+     {
+       $this -> db -> select('atu_clave, atu_correo');
        $this -> db -> from('at_users');
        $this -> db -> where('atu_correo', $usuario);          
 

@@ -37,9 +37,10 @@ class Cregistro extends CI_Controller {
         $tel = $this->input->post('telefono');
         $tipo = $this->input->post('agente');
         $des = $this->input->post('descripcion');
-        $p = $this->input->post('contra');         
+        $p = $this->input->post('contra'); 
+        $pass =  $this->encrypt->encode($p);       
                 //ENVÍAMOS LOS DATOS AL MODELO CON LA SIGUIENTE LÍNEA
-        $result = $this->muser->new_user($nombre,$apellido,$correo_e,$p,$tel,$tipo,$des);//SE GUARDA EL USUARIO EN LA BASE DE DATOS 
+        $result = $this->muser->new_user($nombre,$apellido,$correo_e,$pass,$tel,$tipo,$des);//SE GUARDA EL USUARIO EN LA BASE DE DATOS 
 
         //***********************************************
         $config = Array(
