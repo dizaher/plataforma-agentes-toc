@@ -256,7 +256,7 @@
             
             <button type="submit" class="btn btn-primary">Ingresar</button>
         </form>
-        <!--<a href="#">Forgot your password?</a>-->
+        <a href="<?php echo site_url('ctoc/recoverypass') ?>">Olvidaste tu contraseña?</a>
     </div>
     <!--/Modal Body-->
 </div>

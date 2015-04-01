@@ -5,6 +5,7 @@ class Cingreso extends CI_Controller {
  function __construct()
  {
    parent::__construct();
+   $this->load->model('mnoti');
    $this->load->model('muser','',TRUE);
    $this->load->library("encrypt");
  }
@@ -15,37 +16,46 @@ class Cingreso extends CI_Controller {
    $this->load->library('form_validation');
 
    $this->form_validation->set_rules('correo', 'E-mail','trim|required|xss_clean');
-   $this->form_validation->set_rules('clave', 'Password', 'trim|required|xss_clean|callback_busca_usuario');
+   $this->form_validation->set_rules('clave', 'Password', 'required|trim|xss_clean|min_length[5]|callback_busca_usuario');
 
    if($this->form_validation->run() == FALSE)
    {
      //Validación de campo fallado. Usuario redirigido a la página iniciar sesión
+        $data['noti_principales'] = $this->mnoti->get_noticias_prin();
+        $data['noti_secundarias'] = $this->mnoti->get_noticias_secu();
         $data['contenido']='noticias_view';
         $this->load->view('index',$data);
    }
    else
    {                     
-      $data['contenido']='noticias_view';
+      $data['noti_principales'] = $this->mnoti->get_noticias_prin();
+      $data['noti_secundarias'] = $this->mnoti->get_noticias_secu();
+      $data['contenido']='noticias_view';      
       $this->load->view('session_view',$data);
    }
 
  }
 
- function busca_usuario($clave)
+ function busca_usuario()
  {
    //Validación de campo tuvo éxito. Validar contra la base de datos
    $usuario = $this->input->post('correo');        
-   $cla = md5($clave);
+   $cla = $this->input->post('clave');   
    //consultar la base de datos
    $result = $this->muser->busca_user($usuario);
 
+   $msg = 'Mi mensaje secreto';
+$key = 'clave-super-secreta';
+
+$encrypted_string = $this->encrypt->decode($msg, $key);
+echo $encrypted_string;
    if($result)
-   {      
+   {                  
       foreach($result as $row)
-      {    
-               
-        if ($cla == $row->atu_clave) { 
-          $this->session->set_userdata('usuario', $row->atu_nombre);         
+      {            
+        if ($row->atu_clave == $cla) { 
+          $this->session->set_userdata('usuario', $row->atu_nombre);
+
           return TRUE;  
         }
         else{
